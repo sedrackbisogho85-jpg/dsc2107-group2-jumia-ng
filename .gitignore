@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local environments and secrets
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Collected and generated data (keep locally, never commit)
+data/raw/*
+data/cleaned/*
+data/checkpoints/*
+!data/raw/.gitkeep
+!data/cleaned/.gitkeep
+!data/checkpoints/.gitkeep
+logs/*
+!logs/.gitkeep
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+
+# Large reconnaissance page captures are local evidence
+reconnaissance/evidence/*.html
+
+# Generated notebook and report exports
+notebooks/*.html
+notebooks/*.pdf
+report/*.pdf
+presentation/*.pdf
+
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+

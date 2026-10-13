@@ -1,0 +1,234 @@
+# Public site
+# bot must follow this rules
+# Site scaping is permited IF the user-agent is clearly identify it as a bot and
+# the bot owner and is using less than 200 request per minute
+# Bot identification must have a owner url or contact if we need to contact them
+# Bots with fake user-agent will be blocked
+# Bots trying to use too many IPs to increase performance may also be blocked.
+# If you need more than 200 RPM, please contact the email techops at jumia com
+#
+# Sitemap files
+Sitemap: https://static.jumia.com.ng/index-sitemap.xml
+Sitemap: https://www.jumia.com.ng/slp/nc/sitemap/sitemap.xml
+
+# --- AI Search Bots ---
+# GPTBot, ChatGPT-User, OAI-SearchBot, PerplexityBot, ClaudeBot and
+# anthropic-ai intentionally have NO group of their own.
+#
+# Under RFC 9309 2.2.1 a crawler obeys exactly ONE group - the most specific
+# one matching its token - and never inherits "User-agent: *". A group such as
+#     User-agent: GPTBot
+#     Allow: /
+# is therefore that crawler's COMPLETE ruleset, and exempts it from every
+# facet / crawl-trap rule below. Position in the file is irrelevant.
+#
+# Letting these tokens fall through to "User-agent: *" is what gives them
+# access to real content AND subjects them to the crawl-trap blocks.
+# Do not re-add per-bot groups without copying the full ruleset into them.
+
+# Training / grounding opt-in token, not a crawler - has no effect on crawl rate
+User-agent: Google-Extended
+Allow: /
+
+# Block training-only crawlers
+User-agent: CCBot
+Disallow: /
+
+# ============ All other crawlers ============
+User-agent: *
+# multiple brand selectors
+Disallow: *--*
+Disallow: /mobapi/
+
+# EN Folder
+Disallow: /en/
+# facets
+Disallow: /*ac_design=
+Disallow: /*age_group=
+Disallow: /*attachment_id=
+Disallow: /*app_topsize=
+Disallow: /*appbottom_size=
+Disallow: /*area_of_use=
+Disallow: /*band_material=
+Disallow: /*battery=
+Disallow: /*beauty_features=
+Disallow: /*burners=
+Disallow: /*capacity=
+Disallow: /*capacity_litres=
+Disallow: /*capacity_kg=
+Disallow: /*capacity_kva=
+Disallow: /*capacity_mah=
+Disallow: /*car_scent=
+Disallow: /*case_material=
+Disallow: /*collection=
+Disallow: /*color=
+Disallow: /*color_family=
+Disallow: /*collar_type=
+Disallow: /*compatible_with=
+Disallow: /*connection=
+Disallow: /*connectivity=
+Disallow: /*connexion=
+Disallow: /*cookertype=
+Disallow: /*cpu_brand=
+Disallow: /*cpu_speed=
+Disallow: /*diapers_size=
+Disallow: /*dir=
+Disallow: /*display_features=
+Disallow: /*display_size=
+Disallow: /*display_type=
+Disallow: /*electronics_features=
+Disallow: /*fan_type=
+Disallow: /*fridge_feet=
+Disallow: /*from=
+Disallow: /*gender=
+Disallow: /*graphics_card=
+Disallow: /*graphics_memory=
+Disallow: /*grounds=
+Disallow: /*hair_type=
+Disallow: /*hdd_size=
+Disallow: /*heatertype=
+Disallow: /*heels_height=
+Disallow: /*heel_type=
+Disallow: /*horse_power=
+Disallow: /*jumia_recommended=
+Disallow: /*kettle_material=
+Disallow: /*lightingtype=
+Disallow: /*machine_type=
+Disallow: /*main_material=
+Disallow: /*material_family=
+Disallow: /*megapixels=
+Disallow: /*megapixels_secondary=
+Disallow: /*network_supported=
+Disallow: /*network_type=
+Disallow: /*operating_system=
+Disallow: /*optical_zoom=
+Disallow: /*paper_size=
+Disallow: /*perfume_size=
+Disallow: /*perfume_type=
+Disallow: /*phone_compatibility=
+Disallow: /*power=
+Disallow: /*price=
+Disallow: /*product_line=
+Disallow: /*product_type=
+Disallow: /*ram=
+Disallow: /*ram_memory=
+Disallow: /*rating=
+Disallow: /*replytocom=
+Disallow: /*rom_stockage=
+Disallow: /*school_level=
+Disallow: /*screentechnolgy=
+Disallow: /*season=
+Disallow: /*seller_product=
+Disallow: /*seller_score=
+Disallow: /*setDevice=
+Disallow: /*shipped_from=
+Disallow: /*shipped_from_overseas=
+Disallow: /*shoe_size=
+Disallow: /*size=
+Disallow: /*sim_number=
+Disallow: /*simcard_type=
+Disallow: /*skin_type=
+Disallow: /*sort=
+Disallow: /*sortDirection=
+Disallow: /*sortdirection=
+Disallow: /*special_price=
+Disallow: /*sports_features=
+Disallow: /*storage_capacity=
+Disallow: /*stove_type=
+Disallow: /*style=
+Disallow: /*system_memory=
+Disallow: /*tag=
+Disallow: /*toys_characters=
+Disallow: /*token=*
+Disallow: /*tv_technology=
+Disallow: /*userSpecific=
+Disallow: /*viewType=
+Disallow: /*washingmachine_type=
+Disallow: /*watch_resistance=
+Disallow: /*waterdispenser=
+Disallow: /*wattage=
+Disallow: /*width=
+Disallow: /*SWJIYLWA*
+Disallow: /*token=*
+
+# facets added June 2021
+Disallow: /*price_discount=
+Disallow: /*return=
+Disallow: /*tag=
+Disallow: /*shop_premium_services=
+Disallow: /*size=
+Disallow: /*crosslist_redirect_popin=
+
+# tracking parameters - prevent crawl budget waste on campaign/ad URLs (JMIA-11849)
+Disallow: /*?utm_*
+Disallow: /*&utm_*
+Disallow: /*?gclid=*
+Disallow: /*&gclid=*
+Disallow: /*?fbclid=*
+Disallow: /*&fbclid=*
+# site search
+Disallow: /*q=
+# paths
+Disallow: /ur/
+Disallow: /assets/
+Disallow: /recommendation/
+Disallow: /customer/
+Disallow: /wishlist/
+Disallow: /suggestion/
+Disallow: /cart/
+Disallow: /catalog/
+Disallow: /onepagecheckout/
+Disallow: /ratingreview/
+Disallow: /index/error/
+Disallow: /ajax/reminder/
+Disallow: /top-searched/
+Disallow: /top-searched/*/
+Disallow: /electronics-clearance-sale/
+Disallow: /electronics-clearance-sale/*/
+Disallow: /*/universal/
+Disallow: /*/generic/
+Disallow: /*/fashion/
+Disallow: /*/general/
+Disallow: /*/samwood/
+Disallow: /*/louis-will/
+Disallow: /*/fashion-brand/
+Disallow: /*/allwin/
+Disallow: /*/glorystar/
+Disallow: /*/all-products/
+Disallow: /all-products/*/
+Disallow: /checkout/success/
+Disallow: /fragment/*
+Disallow: /flash-sales/*flashsale=
+
+# paths added June 2021
+Disallow: */new-products/
+Disallow: */special-price/
+Disallow: */brands/
+Disallow: */seller/
+Disallow: */top-sellers/
+#Allow access to product specifications and ratings
+Allow: /catalog/productspecifications/
+Allow: /catalog/productratingsreviews/
+
+#Jumia global bot control
+Disallow: /miscellaneous/
+
+#Bypass "--" Rule
+Allow: /*.css
+Allow: /*.js
+Allow: *.png
+Allow: /*/*/*/*.css
+Allow: *--*.png
+Allow: *.jpg
+#Allow access to XML Sitemaps
+Allow: /slp/nc/sitemap/
+
+#Block Crawling of CSB pages
+Disallow: /*/*/*/
+Disallow: /*/javascript
+
+#Block MLP folders
+Disallow: /mlp-*/*/
+Disallow: /mlp-*/*page=
+Disallow: /sp-*/*/
+Disallow: /sp-*/*page=

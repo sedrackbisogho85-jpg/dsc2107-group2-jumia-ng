@@ -1,0 +1,71 @@
+[
+  {
+    "label": "robots",
+    "requested_url": "https://www.jumia.com.ng/robots.txt",
+    "final_url": "https://www.jumia.com.ng/robots.txt",
+    "status_code": 200,
+    "retrieved_at": "2026-10-13T18:30:12.176879+03:00",
+    "content_type": "text/plain",
+    "response_bytes": 6407,
+    "sha256": "375a7c8fa4ea1d2c343ea66b16672bb37b8935b42ff82e20a7d612588d77469e",
+    "title": null,
+    "product_card_counts": {},
+    "next_links": [],
+    "blocked_signal": null,
+    "saved_html": "reconnaissance\\evidence\\robots_20261013T183012+0300.txt"
+  },
+  {
+    "label": "Phones & Tablets",
+    "requested_url": "https://www.jumia.com.ng/phones-tablets/",
+    "final_url": "https://www.jumia.com.ng/phones-tablets/",
+    "status_code": 200,
+    "retrieved_at": "2026-10-13T18:30:16.484406+03:00",
+    "content_type": "text/html; charset=utf-8",
+    "response_bytes": 919119,
+    "sha256": "bff25dfd559a5539647d260262475b8f6ba9bf0f47518c11a9d13e4af669c46f",
+    "title": "Phones & Tablets Prices in Nigeria (187144 Products) | Jumia",
+    "product_card_counts": {
+      "article.prd": 169,
+      "article[data-sku]": 0,
+      "article[data-id]": 0,
+      "a.core": 169,
+      "h3.name": 40,
+      "div.prc": 169,
+      "div.old": 40,
+      "div.bdg._dsct": 166,
+      "div.stars": 44,
+      "a[aria-label='Next Page']": 1
+    },
+    "next_links": [
+      "https://www.jumia.com.ng/phones-tablets/?page=2#catalog-listing"
+    ],
+    "blocked_signal": null,
+    "saved_html": "reconnaissance\\evidence\\phones_and_tablets_20261013T183016+0300.html"
+  },
+  {
+    "label": "Computing",
+    "requested_url": "https://www.jumia.com.ng/computing/",
+    "final_url": "https://www.jumia.com.ng/maintenance.html?e=0",
+    "status_code": 503,
+    "retrieved_at": "2026-10-13T18:30:26.829102+03:00",
+    "content_type": "text/html",
+    "response_bytes": 330059,
+    "sha256": "6b126f13b6afe666ee2bf1606ca47d826eec00c9a48adab748835250f9927650",
+    "title": "Jumia",
+    "product_card_counts": {
+      "article.prd": 0,
+      "article[data-sku]": 0,
+      "article[data-id]": 0,
+      "a.core": 0,
+      "h3.name": 0,
+      "div.prc": 0,
+      "div.old": 0,
+      "div.bdg._dsct": 0,
+      "div.stars": 0,
+      "a[aria-label='Next Page']": 0
+    },
+    "next_links": [],
+    "blocked_signal": null,
+    "saved_html": "reconnaissance\\evidence\\computing_20261013T183026+0300.html"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "label": "Computing",
+    "requested_url": "https://www.jumia.com.ng/computing/",
+    "final_url": "https://www.jumia.com.ng/computing/",
+    "status_code": 200,
+    "retrieved_at": "2026-10-13T18:41:52.642981+03:00",
+    "content_type": "text/html; charset=utf-8",
+    "response_bytes": 819566,
+    "sha256": "fd84ddeed8ed3204c620f6f091a4c551d23dd3bf9083580a0183b27e49b75e62",
+    "title": "Computing - Buy Computers & Accessories Online | Jumia NG",
+    "product_card_counts": {
+      "article.prd": 122,
+      "article.prd._fb.col.c-prd": 40,
+      "article[data-sku]": 0,
+      "article[data-id]": 0,
+      "a.core": 122,
+      "a.core[data-gtm-id]": 122,
+      "h3.name": 40,
+      "div.prc": 122,
+      "div.old": 39,
+      "div.bdg._dsct": 95,
+      "div.stars": 44,
+      "a[aria-label='Next Page']": 1
+    },
+    "next_links": [
+      "https://www.jumia.com.ng/computing/?page=2#catalog-listing"
+    ],
+    "blocked_signal": null,
+    "saved_html": "reconnaissance\\evidence\\computing_20261013T184152+0300.html"
+  },
+  {
+    "label": "Electronics",
+    "requested_url": "https://www.jumia.com.ng/electronics/",
+    "final_url": "https://www.jumia.com.ng/electronics/",
+    "status_code": 200,
+    "retrieved_at": "2026-10-13T18:42:08.743258+03:00",
+    "content_type": "text/html; charset=utf-8",
+    "response_bytes": 798345,
+    "sha256": "5b8168b7ad3334aca4f825d463fe0abf9125c8914855fffcf9b46d16e2d1ac3a",
+    "title": "Buy Quality Electronics at Affordable Prices Online | Jumia Nigeria",
+    "product_card_counts": {
+      "article.prd": 112,
+      "article.prd._fb.col.c-prd": 40,
+      "article[data-sku]": 0,
+      "article[data-id]": 0,
+      "a.core": 112,
+      "a.core[data-gtm-id]": 112,
+      "h3.name": 40,
+      "div.prc": 112,
+      "div.old": 39,
+      "div.bdg._dsct": 111,
+      "div.stars": 44,
+      "a[aria-label='Next Page']": 1
+    },
+    "next_links": [
+      "https://www.jumia.com.ng/electronics/?page=2#catalog-listing"
+    ],
+    "blocked_signal": null,
+    "saved_html": "reconnaissance\\evidence\\electronics_20261013T184208+0300.html"
+  }
+]
