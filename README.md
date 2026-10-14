@@ -35,8 +35,18 @@ For a daily run after the sample passes:
 python -m src.scraper daily --target 600 --max-pages 8
 python -m src.validator data/raw/jumia_ng_products_YYYY-MM-DD.csv --minimum-records 500
 python -m src.cleaner data/raw/jumia_ng_products_YYYY-MM-DD.csv
-python -m src.database_loader data/cleaned/jumia_ng_products_YYYY-MM-DD_cleaned.csv database/jumia_ng.sqlite
 ```
+
+Rebuild the database from every accepted cleaned daily file. For the current
+two-day dataset, use:
+
+```powershell
+python -m src.database_loader data/cleaned/jumia_ng_products_2026-10-13_cleaned.csv data/cleaned/jumia_ng_products_2026-10-14_cleaned.csv database/jumia_ng.sqlite --replace
+```
+
+The loader rejects duplicate observations for the same product and collection
+date. Add each later accepted cleaned CSV to the same command when refreshing
+the database.
 
 If an ordinary failure interrupts a collection, resume from its checkpoint
 without requesting completed pages again:
@@ -48,7 +58,7 @@ python -m src.scraper daily --resume data/checkpoints/daily_TIMESTAMP.json
 The same email can instead be supplied with `--contact-email`. It is never
 hard-coded into the project.
 
-## Day 1 status
+## Current collection status
 
 The repository was separated from the Books to Scrape warm-up on 13 October
 2026. Reconnaissance, parser validation, the sample, and Daily Run 1 were then
@@ -60,6 +70,20 @@ completed in that order.
 - Daily HTTP attempts: 19, including two successful timeout retries
 - duplicate rows in the saved daily CSV: 0
 - raw checksum verified against the run manifest
+
+Daily Run 2 was completed on 14 October 2026 before midnight in
+`Africa/Nairobi`:
+
+- 600 valid unique products, with 200 from each category
+- 22 HTTP attempts, including 6 successful controlled timeout retries
+- 0 duplicate product IDs and 0 malformed cards
+- no CAPTCHA, HTTP 403, HTTP 429 or access-denial signal
+- accepted SHA-256:
+  `d0d48535403804ebce0bb63fad837c0c70a52954f47753c2c00c60bd17f2d091`
+
+The two-day database contains 689 unique products and 1,239 observations. Runs
+1 and 2 overlap on 550 products; these are preliminary checks and not final
+seven-day conclusions. All eight current unit tests pass.
 
 Raw datasets, generated cleaned files, checkpoints, logs, and SQLite databases
 remain local and are ignored by Git. They must not be manually edited.
