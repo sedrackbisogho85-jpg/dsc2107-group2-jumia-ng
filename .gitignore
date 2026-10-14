@@ -40,3 +40,6 @@ Thumbs.db
 .vscode/
 .idea/
 
+# Local build and visual-QA intermediates
+tmp/
+
