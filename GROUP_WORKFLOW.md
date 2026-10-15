@@ -8,12 +8,19 @@ accept the responsibility.
 | Date | Daily owner | Independent checker | Status |
 |---|---|---|---|
 | 13 October | `[member]` | `[member]` | Completed |
-| 14 October | `[member]` | `[member]` | Not run |
-| 15 October | `[member]` | `[member]` | Not run |
+| 14 October | `[member]` | `[member]` | Completed |
+| 15 October | `[member]` | `[member]` | Completed |
 | 16 October | `[member]` | `[member]` | Not run |
 | 17 October | `[member]` | `[member]` | Not run |
 | 18 October | `[member]` | `[member]` | Not run |
 | 19 October | `[member]` | `[member]` | Not run |
+
+Current progress is 3 of 7 accepted runs. Daily Run 3 occurred from 21:26:16
+to 21:29:55 on 15 October 2026 in `Africa/Nairobi`. It produced 639 records
+(239 Phones & Tablets, 200 Computing and 200 Electronics) using 18 HTTP
+attempts and 1 controlled retry. Its accepted raw SHA-256 is
+`2e7102f2bd4dbf9d33e8b677640f1dbbc0a844029df88c321768efb68c91cfe5`.
+The refreshed database contains 1,878 observations and 727 products.
 
 There must be exactly one accepted scraper run per collection date. A rerun
 must use a timestamped filename and the group must document which file is the

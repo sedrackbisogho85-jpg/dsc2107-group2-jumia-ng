@@ -38,10 +38,10 @@ python -m src.cleaner data/raw/jumia_ng_products_YYYY-MM-DD.csv
 ```
 
 Rebuild the database from every accepted cleaned daily file. For the current
-two-day dataset, use:
+three-day dataset, use:
 
 ```powershell
-python -m src.database_loader data/cleaned/jumia_ng_products_2026-10-13_cleaned.csv data/cleaned/jumia_ng_products_2026-10-14_cleaned.csv database/jumia_ng.sqlite --replace
+python -m src.database_loader data/cleaned/jumia_ng_products_2026-10-13_cleaned.csv data/cleaned/jumia_ng_products_2026-10-14_cleaned.csv data/cleaned/jumia_ng_products_2026-10-15_cleaned.csv database/jumia_ng.sqlite --replace
 ```
 
 The loader rejects duplicate observations for the same product and collection
@@ -81,8 +81,20 @@ Daily Run 2 was completed on 14 October 2026 before midnight in
 - accepted SHA-256:
   `d0d48535403804ebce0bb63fad837c0c70a52954f47753c2c00c60bd17f2d091`
 
-The two-day database contains 689 unique products and 1,239 observations. Runs
-1 and 2 overlap on 550 products; these are preliminary checks and not final
+Daily Run 3 was completed on 15 October 2026 from 21:26:16 to 21:29:55 in
+`Africa/Nairobi`:
+
+- 639 valid unique products: 239 Phones & Tablets, 200 Computing and 200 Electronics
+- 18 HTTP attempts, including 1 successful controlled timeout retry
+- 0 duplicate saved product IDs and 0 malformed cards
+- no CAPTCHA, HTTP 403, HTTP 429 or access-denial signal
+- accepted SHA-256:
+  `2e7102f2bd4dbf9d33e8b677640f1dbbc0a844029df88c321768efb68c91cfe5`
+
+The project has completed 3 of 7 planned daily runs. The three-day database
+contains 727 unique products and 1,878 observations. Day 3 shares 601 products
+with previous days, adds 38 products not seen earlier, and omits 88 products
+seen in an earlier sample. These are preliminary sample checks, not final
 seven-day conclusions. All eight current unit tests pass.
 
 Raw datasets, generated cleaned files, checkpoints, logs, and SQLite databases
