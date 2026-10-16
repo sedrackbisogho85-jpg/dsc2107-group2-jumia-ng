@@ -1,7 +1,8 @@
-# Local data procedure
+# Version-controlled data procedure
 
-The contents of `raw/`, `cleaned/` and `checkpoints/` are intentionally ignored
-by Git. The `.gitkeep` files preserve the folder structure only.
+Accepted contents of `raw/`, `cleaned/` and `checkpoints/` are tracked by Git so
+every clone contains the complete evidence for all accepted collection dates.
+The `.gitkeep` files preserve the folder structure before the first run.
 
 ## Raw data
 
@@ -21,11 +22,11 @@ must never replace raw files. Checkpoints belong in `data/checkpoints/`, not in
 
 ## Sharing with the group
 
-Use the approved private shared-data folder because datasets are not stored in
-Git. Copy the accepted raw CSV, manifest, run log and checksum verification.
-The receiving member must recompute the checksum before use. Do not share
-credentials, `.env` files, Git metadata, virtual environments or private
-browser/session data.
+Commit each accepted raw CSV together with its manifest, validation,
+checkpoint, run log, cleaned CSV and refreshed database on the daily branch.
+The reviewing member must recompute the raw checksum before merging. Never
+commit credentials, `.env` files, Git metadata, virtual environments, generated
+caches or private browser/session data.
 
 ## Current verified data
 

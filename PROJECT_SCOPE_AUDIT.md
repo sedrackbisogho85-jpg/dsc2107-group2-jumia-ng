@@ -1,10 +1,10 @@
 # Project scope audit
 
-**Audit date:** 14 October 2026
-**Scope:** Independent Jumia Nigeria repository after accepted Daily Runs 1 and 2
+**Audit date:** 16 October 2026
+**Scope:** Independent Jumia Nigeria repository after accepted Daily Runs 1–3
 
 This audit classifies the current project without deleting or moving files. The
-final submission is not yet complete because five daily runs, the notebook PDF,
+final submission is not yet complete because four daily runs, the notebook PDF,
 final report, presentation and contribution statements are still pending.
 
 ## A. Required final deliverables
@@ -19,10 +19,10 @@ final report, presentation and contribution statements are still pending.
 | `src/database_loader.py` | Required normalized SQLite loader. It now accepts multiple cleaned daily files. |
 | `src/config.py`, `src/utils.py`, `src/__init__.py` | Essential supporting files used by the main scripts. |
 | `src/validator.py` | Required validation step for accepted raw files. |
-| `data/raw/jumia_ng_products_2026-10-13.csv` and `data/raw/jumia_ng_products_2026-10-14.csv` | The first two immutable daily raw files. Five genuine daily files are still required. |
-| `data/cleaned/jumia_ng_products_2026-10-13_cleaned.csv` and `data/cleaned/jumia_ng_products_2026-10-14_cleaned.csv` | Current reproducible cleaned inputs. A combined cleaned CSV should be produced after Run 7 for the final package. |
-| `database/jumia_ng.sqlite` | Current normalized two-day database with 689 products, 3 categories and 1,239 observations. It must be refreshed after every accepted run. |
-| `notebooks/jumia_analysis.ipynb` | Executed preliminary notebook. It currently uses two dates and contains seven interpreted charts. |
+| `data/raw/jumia_ng_products_2026-10-13.csv`, `2026-10-14.csv` and `2026-10-15.csv` | The first three immutable daily raw files. Four genuine daily files are still required. |
+| Corresponding files under `data/cleaned/` | Current reproducible cleaned inputs for Runs 1–3. A combined cleaned CSV should be produced after Run 7 for the final package. |
+| `database/jumia_ng.sqlite` | Current normalized three-day database with 727 products, 3 categories and 1,878 observations. It must be refreshed after every accepted run. |
+| `notebooks/jumia_analysis.ipynb` | Executed preliminary notebook. It currently uses three dates and contains interpreted charts. |
 | `report/data_dictionary.md` | Required explanation of fields, types, sources and meanings. It can be included directly or incorporated into the final report. |
 | `report/final_report.pdf` | Required final 5–8-page report; not yet created. |
 | `notebooks/jumia_analysis.pdf` | Required final notebook export; not yet created. |
@@ -33,7 +33,7 @@ final report, presentation and contribution statements are still pending.
 
 | Current file or folder | Reason |
 |---|---|
-| `.gitignore` | Protects raw data, cleaned data, databases, logs, checkpoints, secrets and temporary files from accidental commits. |
+| `.gitignore` | Protects secrets, environments, caches, editor files and transient browser/session data while allowing complete project evidence to be committed. |
 | `CONTRIBUTING.md`, `GROUP_WORKFLOW.md`, `data/README.md` | Useful collaboration, daily-run and local-data rules. They do not need prominent placement in the final submission. |
 | `contributions/contribution_log_template.md` | Working template for honest individual contribution records. |
 | `tests/` and `tests/fixtures/listing_page.html` | Reproducible parser, cleaner and multi-day database tests. They support code quality even if the lecturer does not require them as headline deliverables. |
@@ -94,4 +94,4 @@ No file in this section was deleted during the audit.
 - No wording claims guaranteed marks, perfection, expert status, enterprise/production-grade architecture or lecturer approval.
 - No project document says that AI generated the assignment. The only AI-bot names found are quoted from the saved public `robots.txt` evidence.
 - Reliability features should remain. Pagination, missing-value handling, retries, logging, rate limiting, request counting, block detection, validation, database constraints and tests directly support the rubric.
-- Current notebook wording is cautious: it labels the two-day results preliminary and does not make seven-day conclusions.
+- Current notebook wording is cautious: it labels the three-day results preliminary and does not make seven-day conclusions.

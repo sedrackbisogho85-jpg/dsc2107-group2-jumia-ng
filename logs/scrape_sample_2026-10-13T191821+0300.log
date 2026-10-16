@@ -1,0 +1,10 @@
+2026-10-13 19:18:21,496 INFO Request 1/20 attempt=1 url=https://www.jumia.com.ng/robots.txt
+2026-10-13 19:18:31,097 INFO Request 2/20 attempt=1 url=https://www.jumia.com.ng/phones-tablets/
+2026-10-13 19:18:37,734 INFO Parsed category=Phones & Tablets page=1 cards=40 unique_total=40
+2026-10-13 19:18:40,280 INFO Request 3/20 attempt=1 url=https://www.jumia.com.ng/computing/
+2026-10-13 19:19:19,216 WARNING Temporary network failure: HTTPSConnectionPool(host='www.jumia.com.ng', port=443): Read timed out.
+2026-10-13 19:19:22,217 INFO Request 4/20 attempt=2 url=https://www.jumia.com.ng/computing/
+2026-10-13 19:19:48,941 INFO Parsed category=Computing page=1 cards=40 unique_total=80
+2026-10-13 19:19:51,518 INFO Request 5/20 attempt=1 url=https://www.jumia.com.ng/electronics/
+2026-10-13 19:20:03,138 INFO Parsed category=Electronics page=1 cards=40 unique_total=120
+2026-10-13 19:20:03,224 INFO Run result: {"completion_status": "complete", "record_count": 120, "category_counts": {"Phones & Tablets": 40, "Computing": 40, "Electronics": 40}, "duplicate_cards_merged": 0, "malformed_cards": 0, "request_count": 5, "delay_seconds": 3.0, "errors": [], "raw_file": "C:\\Users\\ALEX\\Desktop\\YEAR 2 SEM 1\\MINERS\\MAIN-JUMIA\\DSC2107_Group2_Jumia_Main\\data\\raw\\jumia_ng_sample_2026-10-13T191821+0300.csv", "manifest": "C:\\Users\\ALEX\\Desktop\\YEAR 2 SEM 1\\MINERS\\MAIN-JUMIA\\DSC2107_Group2_Jumia_Main\\data\\raw\\manifest_sample_2026-10-13T191821+0300.json", "checkpoint": "C:\\Users\\ALEX\\Desktop\\YEAR 2 SEM 1\\MINERS\\MAIN-JUMIA\\DSC2107_Group2_Jumia_Main\\data\\checkpoints\\sample_2026-10-13T191821+0300.json", "log": "C:\\Users\\ALEX\\Desktop\\YEAR 2 SEM 1\\MINERS\\MAIN-JUMIA\\DSC2107_Group2_Jumia_Main\\logs\\scrape_sample_2026-10-13T191821+0300.log"}

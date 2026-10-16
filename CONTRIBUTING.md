@@ -37,8 +37,10 @@ the primary owner of that task.
 - A different member must review the pull request before it is merged.
 - Address review comments with additional commits; do not hide authorship.
 - Keep commits focused and use messages that describe the completed outcome.
-- Do not commit raw or cleaned data, logs, databases, checkpoints, backups,
-  secrets, `.env` files or virtual environments.
+- Commit an accepted run's raw and cleaned data, manifest, validation,
+  checkpoint, log and refreshed database together after checksum verification.
+- Never commit backups, credentials, `.env` files, virtual environments,
+  browser profiles, session data or generated caches.
 
 ## Code and evidence quality
 

@@ -1,0 +1,38 @@
+2026-10-13 19:22:00,887 INFO Request 1/1000 attempt=1 url=https://www.jumia.com.ng/robots.txt
+2026-10-13 19:22:05,256 INFO Request 2/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/
+2026-10-13 19:22:51,559 WARNING Temporary network failure: HTTPSConnectionPool(host='www.jumia.com.ng', port=443): Read timed out.
+2026-10-13 19:22:54,560 INFO Request 3/1000 attempt=2 url=https://www.jumia.com.ng/phones-tablets/
+2026-10-13 19:23:13,718 INFO Parsed category=Phones & Tablets page=1 cards=40 unique_total=40
+2026-10-13 19:23:15,790 INFO Request 4/1000 attempt=1 url=https://www.jumia.com.ng/computing/
+2026-10-13 19:23:34,873 INFO Parsed category=Computing page=1 cards=40 unique_total=80
+2026-10-13 19:23:37,450 INFO Request 5/1000 attempt=1 url=https://www.jumia.com.ng/electronics/
+2026-10-13 19:23:44,003 INFO Parsed category=Electronics page=1 cards=40 unique_total=120
+2026-10-13 19:23:46,669 INFO Request 6/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/?page=2
+2026-10-13 19:23:56,837 INFO Parsed category=Phones & Tablets page=2 cards=40 unique_total=160
+2026-10-13 19:23:59,360 INFO Request 7/1000 attempt=1 url=https://www.jumia.com.ng/computing/?page=2
+2026-10-13 19:24:11,552 INFO Parsed category=Computing page=2 cards=40 unique_total=200
+2026-10-13 19:24:14,243 INFO Request 8/1000 attempt=1 url=https://www.jumia.com.ng/electronics/?page=2
+2026-10-13 19:24:22,354 INFO Parsed category=Electronics page=2 cards=40 unique_total=240
+2026-10-13 19:24:25,096 INFO Request 9/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/?page=3
+2026-10-13 19:24:38,427 INFO Parsed category=Phones & Tablets page=3 cards=40 unique_total=280
+2026-10-13 19:24:40,643 INFO Request 10/1000 attempt=1 url=https://www.jumia.com.ng/computing/?page=3
+2026-10-13 19:24:52,966 INFO Parsed category=Computing page=3 cards=40 unique_total=320
+2026-10-13 19:24:55,684 INFO Request 11/1000 attempt=1 url=https://www.jumia.com.ng/electronics/?page=3
+2026-10-13 19:25:25,698 WARNING Temporary network failure: HTTPSConnectionPool(host='www.jumia.com.ng', port=443): Read timed out. (read timeout=30.0)
+2026-10-13 19:25:28,700 INFO Request 12/1000 attempt=2 url=https://www.jumia.com.ng/electronics/?page=3
+2026-10-13 19:25:32,490 INFO Parsed category=Electronics page=3 cards=40 unique_total=360
+2026-10-13 19:25:35,193 INFO Request 13/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/?page=4
+2026-10-13 19:25:42,207 INFO Parsed category=Phones & Tablets page=4 cards=40 unique_total=400
+2026-10-13 19:25:44,855 INFO Request 14/1000 attempt=1 url=https://www.jumia.com.ng/computing/?page=4
+2026-10-13 19:25:50,022 INFO Parsed category=Computing page=4 cards=40 unique_total=440
+2026-10-13 19:25:52,745 INFO Request 15/1000 attempt=1 url=https://www.jumia.com.ng/electronics/?page=4
+2026-10-13 19:25:57,641 INFO Parsed category=Electronics page=4 cards=40 unique_total=480
+2026-10-13 19:26:00,346 INFO Request 16/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/?page=5
+2026-10-13 19:26:16,402 INFO Parsed category=Phones & Tablets page=5 cards=40 unique_total=519
+2026-10-13 19:26:18,944 INFO Request 17/1000 attempt=1 url=https://www.jumia.com.ng/computing/?page=5
+2026-10-13 19:26:24,016 INFO Parsed category=Computing page=5 cards=40 unique_total=559
+2026-10-13 19:26:26,727 INFO Request 18/1000 attempt=1 url=https://www.jumia.com.ng/electronics/?page=5
+2026-10-13 19:26:35,603 INFO Parsed category=Electronics page=5 cards=40 unique_total=599
+2026-10-13 19:26:38,343 INFO Request 19/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/?page=6
+2026-10-13 19:26:44,122 INFO Parsed category=Phones & Tablets page=6 cards=40 unique_total=639
+2026-10-13 19:26:44,205 INFO Run result: {"completion_status": "complete", "record_count": 639, "category_counts": {"Phones & Tablets": 239, "Computing": 200, "Electronics": 200}, "duplicate_cards_merged": 1, "malformed_cards": 0, "request_count": 19, "delay_seconds": 3.0, "errors": [], "raw_file": "C:\\Users\\ALEX\\Desktop\\YEAR 2 SEM 1\\MINERS\\MAIN-JUMIA\\DSC2107_Group2_Jumia_Main\\data\\raw\\jumia_ng_products_2026-10-13.csv", "manifest": "C:\\Users\\ALEX\\Desktop\\YEAR 2 SEM 1\\MINERS\\MAIN-JUMIA\\DSC2107_Group2_Jumia_Main\\data\\raw\\manifest_daily_2026-10-13T192200+0300.json", "checkpoint": "C:\\Users\\ALEX\\Desktop\\YEAR 2 SEM 1\\MINERS\\MAIN-JUMIA\\DSC2107_Group2_Jumia_Main\\data\\checkpoints\\daily_2026-10-13T192200+0300.json", "log": "C:\\Users\\ALEX\\Desktop\\YEAR 2 SEM 1\\MINERS\\MAIN-JUMIA\\DSC2107_Group2_Jumia_Main\\logs\\scrape_daily_2026-10-13T192200+0300.log"}

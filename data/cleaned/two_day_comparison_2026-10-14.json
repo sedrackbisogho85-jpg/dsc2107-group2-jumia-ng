@@ -1,0 +1,67 @@
+{
+  "accepted_dates": [
+    "2026-10-13",
+    "2026-10-14"
+  ],
+  "cleaned_rows_by_date": {
+    "2026-10-13": 639,
+    "2026-10-14": 600
+  },
+  "unique_products_across_both_days": 689,
+  "day_1_observations": 639,
+  "day_2_observations": 600,
+  "total_observations": 1239,
+  "product_overlap": 550,
+  "new_products_on_day_2": 50,
+  "present_day_1_absent_day_2": 89,
+  "products_with_price_change": 25,
+  "overlap_products_with_both_discounts": 524,
+  "products_with_numeric_discount_change": 20,
+  "products_with_discount_value_or_availability_change": 23,
+  "database_counts": {
+    "products": 689,
+    "categories": 3,
+    "product_categories": 689,
+    "observations": 1239
+  },
+  "database_observations_by_date": {
+    "2026-10-13": 639,
+    "2026-10-14": 600
+  },
+  "duplicate_product_date_observations": 0,
+  "foreign_key_violations": [],
+  "cleaned_missing_counts": {
+    "2026-10-13": {
+      "old_price": 26,
+      "displayed_discount_percentage": 26,
+      "calculated_discount_percentage": 26,
+      "rating": 3,
+      "review_count": 3
+    },
+    "2026-10-14": {
+      "old_price": 31,
+      "displayed_discount_percentage": 31,
+      "calculated_discount_percentage": 31,
+      "rating": 3,
+      "review_count": 3
+    }
+  },
+  "database_null_counts": {
+    "2026-10-13": {
+      "old_price": 26,
+      "displayed_discount_percentage": 26,
+      "calculated_discount_percentage": 26,
+      "rating": 3,
+      "review_count": 3
+    },
+    "2026-10-14": {
+      "old_price": 31,
+      "displayed_discount_percentage": 31,
+      "calculated_discount_percentage": 31,
+      "rating": 3,
+      "review_count": 3
+    }
+  },
+  "missing_values_preserved": true,
+  "displayed_and_calculated_discount_columns_separate": true
+}

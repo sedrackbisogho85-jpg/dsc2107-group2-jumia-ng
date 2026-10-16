@@ -1,0 +1,44 @@
+2026-10-14 21:41:34,066 INFO Request 1/1000 attempt=1 url=https://www.jumia.com.ng/robots.txt
+2026-10-14 21:41:41,571 INFO Request 2/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/
+2026-10-14 21:41:57,697 INFO Parsed category=Phones & Tablets page=1 cards=40 unique_total=40
+2026-10-14 21:41:59,310 INFO Request 3/1000 attempt=1 url=https://www.jumia.com.ng/computing/
+2026-10-14 21:42:03,913 INFO Parsed category=Computing page=1 cards=40 unique_total=80
+2026-10-14 21:42:05,901 INFO Request 4/1000 attempt=1 url=https://www.jumia.com.ng/electronics/
+2026-10-14 21:42:11,824 INFO Parsed category=Electronics page=1 cards=40 unique_total=120
+2026-10-14 21:42:14,437 INFO Request 5/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/?page=2
+2026-10-14 21:42:17,599 INFO Parsed category=Phones & Tablets page=2 cards=40 unique_total=160
+2026-10-14 21:42:20,240 INFO Request 6/1000 attempt=1 url=https://www.jumia.com.ng/computing/?page=2
+2026-10-14 21:42:28,673 INFO Parsed category=Computing page=2 cards=40 unique_total=200
+2026-10-14 21:42:31,391 INFO Request 7/1000 attempt=1 url=https://www.jumia.com.ng/electronics/?page=2
+2026-10-14 21:43:11,422 WARNING Temporary network failure: HTTPSConnectionPool(host='www.jumia.com.ng', port=443): Read timed out.
+2026-10-14 21:43:14,423 INFO Request 8/1000 attempt=2 url=https://www.jumia.com.ng/electronics/?page=2
+2026-10-14 21:43:24,078 INFO Parsed category=Electronics page=2 cards=40 unique_total=240
+2026-10-14 21:43:26,811 INFO Request 9/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/?page=3
+2026-10-14 21:43:55,656 INFO Parsed category=Phones & Tablets page=3 cards=40 unique_total=280
+2026-10-14 21:43:58,166 INFO Request 10/1000 attempt=1 url=https://www.jumia.com.ng/computing/?page=3
+2026-10-14 21:44:08,425 INFO Parsed category=Computing page=3 cards=40 unique_total=320
+2026-10-14 21:44:09,752 INFO Request 11/1000 attempt=1 url=https://www.jumia.com.ng/electronics/?page=3
+2026-10-14 21:44:13,835 INFO Parsed category=Electronics page=3 cards=40 unique_total=360
+2026-10-14 21:44:16,396 INFO Request 12/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/?page=4
+2026-10-14 21:44:39,226 INFO Parsed category=Phones & Tablets page=4 cards=40 unique_total=400
+2026-10-14 21:44:41,693 INFO Request 13/1000 attempt=1 url=https://www.jumia.com.ng/computing/?page=4
+2026-10-14 21:45:36,041 WARNING Temporary network failure: HTTPSConnectionPool(host='www.jumia.com.ng', port=443): Read timed out.
+2026-10-14 21:45:39,043 INFO Request 14/1000 attempt=2 url=https://www.jumia.com.ng/computing/?page=4
+2026-10-14 21:45:48,478 INFO Parsed category=Computing page=4 cards=40 unique_total=440
+2026-10-14 21:45:50,678 INFO Request 15/1000 attempt=1 url=https://www.jumia.com.ng/electronics/?page=4
+2026-10-14 21:46:14,123 INFO Parsed category=Electronics page=4 cards=40 unique_total=480
+2026-10-14 21:46:16,845 INFO Request 16/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/?page=5
+2026-10-14 21:46:46,854 WARNING Temporary network failure: HTTPSConnectionPool(host='www.jumia.com.ng', port=443): Read timed out. (read timeout=30.0)
+2026-10-14 21:46:49,856 INFO Request 17/1000 attempt=2 url=https://www.jumia.com.ng/phones-tablets/?page=5
+2026-10-14 21:47:30,835 INFO Parsed category=Phones & Tablets page=5 cards=40 unique_total=520
+2026-10-14 21:47:33,257 INFO Request 18/1000 attempt=1 url=https://www.jumia.com.ng/computing/?page=5
+2026-10-14 21:48:18,470 WARNING Temporary network failure: HTTPSConnectionPool(host='www.jumia.com.ng', port=443): Read timed out.
+2026-10-14 21:48:21,471 INFO Request 19/1000 attempt=2 url=https://www.jumia.com.ng/computing/?page=5
+2026-10-14 21:48:29,154 INFO Parsed category=Computing page=5 cards=40 unique_total=560
+2026-10-14 21:48:31,287 INFO Request 20/1000 attempt=1 url=https://www.jumia.com.ng/electronics/?page=5
+2026-10-14 21:49:07,121 WARNING Temporary network failure: HTTPSConnectionPool(host='www.jumia.com.ng', port=443): Read timed out.
+2026-10-14 21:49:10,122 INFO Request 21/1000 attempt=2 url=https://www.jumia.com.ng/electronics/?page=5
+2026-10-14 21:49:49,939 WARNING Temporary network failure: HTTPSConnectionPool(host='www.jumia.com.ng', port=443): Read timed out.
+2026-10-14 21:49:55,940 INFO Request 22/1000 attempt=3 url=https://www.jumia.com.ng/electronics/?page=5
+2026-10-14 21:50:28,511 INFO Parsed category=Electronics page=5 cards=40 unique_total=600
+2026-10-14 21:50:28,602 INFO Run result: {"completion_status": "complete", "record_count": 600, "category_counts": {"Phones & Tablets": 200, "Computing": 200, "Electronics": 200}, "duplicate_cards_merged": 0, "malformed_cards": 0, "request_count": 22, "delay_seconds": 3.0, "errors": [], "raw_file": "C:\\Users\\ALEX\\Desktop\\YEAR 2 SEM 1\\MINERS\\MAIN-JUMIA\\DSC2107_Group2_Jumia_Main\\data\\raw\\jumia_ng_products_2026-10-14.csv", "manifest": "C:\\Users\\ALEX\\Desktop\\YEAR 2 SEM 1\\MINERS\\MAIN-JUMIA\\DSC2107_Group2_Jumia_Main\\data\\raw\\manifest_daily_2026-10-14T214134+0300.json", "checkpoint": "C:\\Users\\ALEX\\Desktop\\YEAR 2 SEM 1\\MINERS\\MAIN-JUMIA\\DSC2107_Group2_Jumia_Main\\data\\checkpoints\\daily_2026-10-14T214134+0300.json", "log": "C:\\Users\\ALEX\\Desktop\\YEAR 2 SEM 1\\MINERS\\MAIN-JUMIA\\DSC2107_Group2_Jumia_Main\\logs\\scrape_daily_2026-10-14T214134+0300.log"}

@@ -1,7 +1,7 @@
 # Final submission plan
 
 This is a packaging plan only. Do not create the final submission folder until
-Daily Runs 3–7, the final analysis, the report, the presentation and the signed
+Daily Runs 4–7, the final analysis, the report, the presentation and the signed
 contribution statements are complete and verified.
 
 The Books to Scrape warm-up and Jumia Nigeria must remain separate Git
@@ -54,10 +54,10 @@ DSC2107_Group2_Final_Submission/
 | `warmup/books_scraper.py` and `warmup/books.csv` | Selected files from the separate warm-up repository | Human review required; do not copy yet. |
 | Reconnaissance PDF | `reconnaissance/reconnaissance_note.pdf` | Complete and verified as one page. |
 | Main source code | Essential files under `src/` | Working; multi-day database loader is tested. |
-| Seven raw CSVs | Accepted immutable files under `data/raw/` | Runs 1 and 2 exist; Runs 3–7 are pending. |
-| Combined cleaned CSV | Rebuild from all seven accepted raw CSVs | Not created because only two dates exist. |
-| Final SQLite database | `database/jumia_ng.sqlite` rebuilt from all accepted cleaned data | Current database contains Runs 1 and 2 only. |
-| Executed notebook | `notebooks/jumia_analysis.ipynb` | Two-day version complete; final refresh is pending. |
+| Seven raw CSVs | Accepted immutable files under `data/raw/` | Runs 1–3 exist; Runs 4–7 are pending. |
+| Combined cleaned CSV | Rebuild from all seven accepted raw CSVs | Not created because only three dates exist. |
+| Final SQLite database | `database/jumia_ng.sqlite` rebuilt from all accepted cleaned data | Current database contains Runs 1–3: 727 products and 1,878 observations. |
+| Executed notebook | `notebooks/jumia_analysis.ipynb` | Three-day version complete; final refresh is pending. |
 | Notebook PDF | Export from the final executed notebook | Not created. |
 | Final report | Final 5–8-page report based on verified seven-day results | Not created. |
 | Presentation | Final ten-minute presentation | Not created. |

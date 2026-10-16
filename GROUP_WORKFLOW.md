@@ -47,14 +47,16 @@ accepted observation.
 5. Confirm missing values remain missing.
 6. Mark the run accepted only after all checks pass.
 
-## Shared-data-folder procedure
+## Version-controlled data procedure
 
-Raw data is intentionally excluded from Git. Use the group's approved private
-shared folder with one subfolder per date. Upload by copying, never moving, the
-accepted raw CSV, manifest, log and checksum report. A second member downloads
-the files, recomputes the checksum, and records the match before using them.
-Never place `.env`, credentials, browser sessions, Git metadata or virtual
-environments in the shared folder.
+After a run is accepted, commit its raw CSV, cleaned CSV, manifest, validation,
+checkpoint, log and refreshed database together on the daily branch. A second
+member must recompute the raw SHA-256 and compare it with the manifest before
+the branch is merged. A fresh clone of `main` must therefore contain every
+accepted run and the evidence needed to verify it.
+
+Never commit `.env`, credentials, browser sessions, Git metadata, virtual
+environments, generated caches or external backup folders.
 
 ## Branch and notebook coordination
 

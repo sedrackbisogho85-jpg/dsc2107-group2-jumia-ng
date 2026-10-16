@@ -97,8 +97,10 @@ with previous days, adds 38 products not seen earlier, and omits 88 products
 seen in an earlier sample. These are preliminary sample checks, not final
 seven-day conclusions. All eight current unit tests pass.
 
-Raw datasets, generated cleaned files, checkpoints, logs, and SQLite databases
-remain local and are ignored by Git. They must not be manually edited.
+Accepted raw datasets, generated cleaned files, checkpoints, logs, manifests,
+and the SQLite database are committed so a fresh clone contains the complete
+project evidence. Raw files must not be manually edited; verify their SHA-256
+values against the manifests after cloning or merging.
 
 ## Important files
 
