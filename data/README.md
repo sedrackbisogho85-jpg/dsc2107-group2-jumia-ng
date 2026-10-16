@@ -37,6 +37,7 @@ Three of seven planned daily runs are now accepted:
 | 1 | 13 October 2026, 19:22:00-19:26:44 | 639 | Phones & Tablets 239; Computing 200; Electronics 200 | 19 / 2 | `6d33a6b278c7ebc371d233624f94d46dd2222cdc0b71cd2537dc62a48bd52b48` |
 | 2 | 14 October 2026, 21:41:34-21:50:28 | 600 | 200 in each category | 22 / 6 | `d0d48535403804ebce0bb63fad837c0c70a52954f47753c2c00c60bd17f2d091` |
 | 3 | 15 October 2026, 21:26:16-21:29:55 | 639 | Phones & Tablets 239; Computing 200; Electronics 200 | 18 / 1 | `2e7102f2bd4dbf9d33e8b677640f1dbbc0a844029df88c321768efb68c91cfe5` |
+| 4 | 16 October 2026, 21:26:31-21:28:32 | 600 | 200 in each category | 16 / 0 | `ac3a696a396560e9c123cb710e600ffffa8ca365ea83486074316d8cf59aafacd` |
 
 The refreshed database contains 1,878 observations and 727 unique products.
 Daily Run 3 passed validation with no duplicate IDs, malformed cards, final

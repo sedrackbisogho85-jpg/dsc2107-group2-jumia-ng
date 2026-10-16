@@ -1,0 +1,32 @@
+2026-10-16 21:26:31,474 INFO Request 1/1000 attempt=1 url=https://www.jumia.com.ng/robots.txt
+2026-10-16 21:26:34,723 INFO Request 2/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/
+2026-10-16 21:26:37,532 INFO Parsed category=Phones & Tablets page=1 cards=40 unique_total=40
+2026-10-16 21:26:40,267 INFO Request 3/1000 attempt=1 url=https://www.jumia.com.ng/computing/
+2026-10-16 21:26:44,982 INFO Parsed category=Computing page=1 cards=40 unique_total=80
+2026-10-16 21:26:47,764 INFO Request 4/1000 attempt=1 url=https://www.jumia.com.ng/electronics/
+2026-10-16 21:26:52,820 INFO Parsed category=Electronics page=1 cards=40 unique_total=120
+2026-10-16 21:26:55,602 INFO Request 5/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/?page=2
+2026-10-16 21:26:59,508 INFO Parsed category=Phones & Tablets page=2 cards=40 unique_total=160
+2026-10-16 21:27:02,353 INFO Request 6/1000 attempt=1 url=https://www.jumia.com.ng/computing/?page=2
+2026-10-16 21:27:05,376 INFO Parsed category=Computing page=2 cards=40 unique_total=200
+2026-10-16 21:27:08,206 INFO Request 7/1000 attempt=1 url=https://www.jumia.com.ng/electronics/?page=2
+2026-10-16 21:27:11,875 INFO Parsed category=Electronics page=2 cards=40 unique_total=240
+2026-10-16 21:27:14,736 INFO Request 8/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/?page=3
+2026-10-16 21:27:29,387 INFO Parsed category=Phones & Tablets page=3 cards=40 unique_total=280
+2026-10-16 21:27:32,232 INFO Request 9/1000 attempt=1 url=https://www.jumia.com.ng/computing/?page=3
+2026-10-16 21:27:36,312 INFO Parsed category=Computing page=3 cards=40 unique_total=320
+2026-10-16 21:27:39,063 INFO Request 10/1000 attempt=1 url=https://www.jumia.com.ng/electronics/?page=3
+2026-10-16 21:27:45,713 INFO Parsed category=Electronics page=3 cards=40 unique_total=360
+2026-10-16 21:27:48,542 INFO Request 11/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/?page=4
+2026-10-16 21:27:53,404 INFO Parsed category=Phones & Tablets page=4 cards=40 unique_total=400
+2026-10-16 21:27:56,234 INFO Request 12/1000 attempt=1 url=https://www.jumia.com.ng/computing/?page=4
+2026-10-16 21:28:01,069 INFO Parsed category=Computing page=4 cards=40 unique_total=440
+2026-10-16 21:28:03,913 INFO Request 13/1000 attempt=1 url=https://www.jumia.com.ng/electronics/?page=4
+2026-10-16 21:28:09,633 INFO Parsed category=Electronics page=4 cards=40 unique_total=480
+2026-10-16 21:28:12,479 INFO Request 14/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/?page=5
+2026-10-16 21:28:19,157 INFO Parsed category=Phones & Tablets page=5 cards=40 unique_total=520
+2026-10-16 21:28:21,986 INFO Request 15/1000 attempt=1 url=https://www.jumia.com.ng/computing/?page=5
+2026-10-16 21:28:24,868 INFO Parsed category=Computing page=5 cards=40 unique_total=560
+2026-10-16 21:28:27,636 INFO Request 16/1000 attempt=1 url=https://www.jumia.com.ng/electronics/?page=5
+2026-10-16 21:28:32,008 INFO Parsed category=Electronics page=5 cards=40 unique_total=600
+2026-10-16 21:28:32,164 INFO Run result: {"completion_status": "complete", "record_count": 600, "category_counts": {"Phones & Tablets": 200, "Computing": 200, "Electronics": 200}, "duplicate_cards_merged": 0, "malformed_cards": 0, "request_count": 16, "delay_seconds": 3.0, "errors": [], "raw_file": "C:\\Users\\BISOGHO\\Documents\\dsc2107-group2-jumia-ng\\data\\raw\\jumia_ng_products_2026-10-16.csv", "manifest": "C:\\Users\\BISOGHO\\Documents\\dsc2107-group2-jumia-ng\\data\\raw\\manifest_daily_2026-10-16T212631+0300.json", "checkpoint": "C:\\Users\\BISOGHO\\Documents\\dsc2107-group2-jumia-ng\\data\\checkpoints\\daily_2026-10-16T212631+0300.json", "log": "C:\\Users\\BISOGHO\\Documents\\dsc2107-group2-jumia-ng\\logs\\scrape_daily_2026-10-16T212631+0300.log"}
