@@ -91,17 +91,25 @@ Daily Run 3 was completed on 15 October 2026 from 21:26:16 to 21:29:55 in
 - accepted SHA-256:
   `2e7102f2bd4dbf9d33e8b677640f1dbbc0a844029df88c321768efb68c91cfe5`
 
-The project has completed 3 of 7 planned daily runs. The three-day database
-contains 727 unique products and 1,878 observations. Day 3 shares 601 products
+Daily Run 4 was completed on 16 October 2026 from 21:26:31 to 21:28:32 in Africa/Nairobi:
+
+- 600 valid unique products, with 200 from each category
+- 16 HTTP requests, with no errors recorded
+- 0 duplicate cards merged and 0 malformed cards
+- no CAPTCHA, HTTP 403, HTTP 429 or access-denial signal
+- accepted SHA-256: ac3a696a396560e9c123cb710e600ffffa8ca365ea83486074316d8cf59aafacd
+
+The project has completed 4 of 7 planned daily runs. The four-day database
+contains 756 unique products and 2,478 observations. Day 3 shares 601 products
 with previous days, adds 38 products not seen earlier, and omits 88 products
-seen in an earlier sample. These are preliminary sample checks, not final
-seven-day conclusions. All eight current unit tests pass.
+seen in an earlier sample. Day 4 adds 29 products not seen in the earlier three
+daily runs. These are preliminary sample checks, not final seven-day
+conclusions. All eight current unit tests pass.
 
 Accepted raw datasets, generated cleaned files, checkpoints, logs, manifests,
 and the SQLite database are committed so a fresh clone contains the complete
 project evidence. Raw files must not be manually edited; verify their SHA-256
 values against the manifests after cloning or merging.
-
 ## Important files
 
 - `reconnaissance/reconnaissance_note.md` explains the live site findings.
