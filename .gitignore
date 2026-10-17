@@ -30,3 +30,5 @@ tmp/*
 tmp/pdfs/*
 !tmp/pdfs/build_reconnaissance_pdf.py
 
+
+BACKUPS/
