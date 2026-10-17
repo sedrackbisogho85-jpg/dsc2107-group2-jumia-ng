@@ -30,3 +30,16 @@ tmp/*
 tmp/pdfs/*
 !tmp/pdfs/build_reconnaissance_pdf.py
 
+# Books warm-up: keep private datasets, backups, request logs and temporary
+# files local while allowing source code and validation summaries to be tracked.
+warmup_books/**/*.csv
+warmup_books/backups/
+warmup_books/.venv/
+warmup_books/__pycache__/
+warmup_books/**/*_backup.*
+warmup_books/**/daily_request_usage*.json
+warmup_books/**/*.tmp
+warmup_books/**/*.temp
+warmup_books/**/*.bak
+warmup_books/**/*.log
+

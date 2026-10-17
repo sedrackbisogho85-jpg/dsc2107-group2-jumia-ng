@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.csv
+backups/
+*_backup.*
+daily_request_usage*.json
+*.tmp
+*.temp
+*.bak
+*.log

@@ -1,0 +1,19 @@
+BOOKS TO SCRAPE - VALIDATION REPORT
+===================================
+Original URL records: 1000
+Unique URLs in index: 1000
+Detailed records: 1000
+Unique detailed URLs: 1000
+Remaining book URLs: 0
+
+Duplicate URLs in index: 0
+Duplicate detail URLs: 0
+Duplicate UPCs: 0
+Records with missing fields: 0
+Invalid prices: 0
+Invalid ratings: 0
+Invalid review counts: 0
+Invalid catalogue page values: 0
+Records not marked complete: 0
+URLs not found in original index: 0
+Dataset count mismatches: 0
