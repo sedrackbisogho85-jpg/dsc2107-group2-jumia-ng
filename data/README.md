@@ -34,7 +34,8 @@ browser/session data.
 
 ## Current verified data
 
-Five of seven planned collection dates are now accepted:
+Days 1-5 are independently accepted. Day 6 is complete and locally validated,
+but its independent checker is still pending:
 
 | Run | Nairobi collection time | Rows | Category counts | HTTP attempts / retries | Raw SHA-256 |
 |---|---|---:|---|---:|---|
@@ -43,10 +44,11 @@ Five of seven planned collection dates are now accepted:
 | 3 | 15 October 2026, 21:26:16-21:29:55 | 639 | Phones & Tablets 239; Computing 200; Electronics 200 | 18 / 1 | `2e7102f2bd4dbf9d33e8b677640f1dbbc0a844029df88c321768efb68c91cfe5` |
 | 4 | 16 October 2026, 21:26:31-21:28:32 | 600 | 200 in each category | 16 / 0 | `ac3a696a396560e9c123cb710e600fffa8ca365ea83486074316d8cf59aafacd` |
 | 5 | 17 October 2026, 22:39:32-22:41:38 | 635 | Phones & Tablets 238; Computing 198; Electronics 199 | 17 / 0 | `182834f7179f00460c485546a62571536c2a324087de830b4082bbba0c881268` |
+| 6 | 18 October 2026, 21:39:00-21:41:04 | 600 | 200 in each category | 16 / 0 | `f26eb2081b484b260eb1a8b346f7db36405dd45e177ce452c1afe256d3275c75` |
 
-The refreshed database contains 3,113 observations and 771 unique products
-across 13-17 October. All five daily raw files pass validation with no duplicate
-IDs or invalid timestamps. Daily Runs 4 and 5 have no malformed cards, retries,
-final errors or access-denial signals. Day 5's 30 missing old-price/discount
-values and 5 missing rating/review values remain missing rather than being
-changed to zero.
+The refreshed local database contains 3,713 observations and 787 unique
+products across 13-18 October. All six daily raw files pass automated
+validation with no duplicate IDs or invalid timestamps. Daily Runs 4-6 have no
+malformed cards, retries, final errors or access-denial signals. Day 6's 27
+missing old-price/discount values and 3 missing rating/review values remain
+missing rather than being changed to zero.

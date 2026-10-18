@@ -12,18 +12,17 @@ accept the responsibility.
 | 15 October | `[member]` | `[member]` | Completed |
 | 16 October | `[member]` | `[member]` | Completed |
 | 17 October | `M2W-E` | `[member]` | Completed |
-| 18 October | `[member]` | `[member]` | Not run |
+| 18 October | Alex | `[member]` | Completed; checker pending |
 | 19 October | `[member]` | `[member]` | Not run |
 
-Current progress is 5 of 7 accepted dates. Daily Run 4 produced 600 records
-(200 per category) on 16 October using 16 HTTP attempts and 0 retries. Daily
-Run 5 occurred from 22:39:32 to 22:41:38 on 17 October 2026 in
-`Africa/Nairobi`, before midnight. It produced 635 records (238 Phones &
-Tablets, 198 Computing and 199 Electronics) using 17 HTTP attempts and 0
-retries. Its accepted raw SHA-256 is
-`182834f7179f00460c485546a62571536c2a324087de830b4082bbba0c881268`.
-The refreshed database contains 3,113 observations and 771 products across all
-five dates from 13-17 October.
+Current progress is 5 independently accepted dates plus a completed and locally
+validated Day 6 awaiting its independent checker. Daily Run 6 occurred from
+21:39:00 to 21:41:04 on 18 October 2026 in `Africa/Nairobi`. It produced 600
+records (200 per category) using 16 HTTP attempts and 0 retries. Its locally
+verified raw SHA-256 is
+`f26eb2081b484b260eb1a8b346f7db36405dd45e177ce452c1afe256d3275c75`.
+The refreshed local database contains 3,713 observations and 787 products
+across all six genuine dates from 13-18 October.
 
 There must be exactly one accepted scraper run per collection date. A rerun
 must use a timestamped filename and the group must document which file is the

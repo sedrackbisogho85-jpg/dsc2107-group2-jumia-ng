@@ -37,11 +37,12 @@ python -m src.validator data/raw/jumia_ng_products_YYYY-MM-DD.csv --minimum-reco
 python -m src.cleaner data/raw/jumia_ng_products_YYYY-MM-DD.csv
 ```
 
-Rebuild the database from every accepted cleaned daily file. The current
-database uses all five genuine accepted dates from 13-17 October:
+Rebuild the database from every locally validated cleaned daily file. The
+current local database uses all six genuine dates from 13-18 October; Day 6
+still needs the independent checker required by the group workflow:
 
 ```powershell
-python -m src.database_loader data/cleaned/jumia_ng_products_2026-10-13_cleaned.csv data/cleaned/jumia_ng_products_2026-10-14_cleaned.csv data/cleaned/jumia_ng_products_2026-10-15_cleaned.csv data/cleaned/jumia_ng_products_2026-10-16_cleaned.csv data/cleaned/jumia_ng_products_2026-10-17_cleaned.csv database/jumia_ng.sqlite --replace
+python -m src.database_loader data/cleaned/jumia_ng_products_2026-10-13_cleaned.csv data/cleaned/jumia_ng_products_2026-10-14_cleaned.csv data/cleaned/jumia_ng_products_2026-10-15_cleaned.csv data/cleaned/jumia_ng_products_2026-10-16_cleaned.csv data/cleaned/jumia_ng_products_2026-10-17_cleaned.csv data/cleaned/jumia_ng_products_2026-10-18_cleaned.csv database/jumia_ng.sqlite --replace
 ```
 
 The loader rejects duplicate observations for the same product and collection
@@ -111,20 +112,31 @@ Daily Run 5 was completed on 17 October 2026 from 22:39:32 to 22:41:38 in
 - accepted SHA-256:
   `182834f7179f00460c485546a62571536c2a324087de830b4082bbba0c881268`
 
-Five of seven planned dates are now accepted: 13-17 October. The database
-contains 771 unique products and 3,113 observations. Day 5 shares 620 products
-with Days 1-4, adds 15 products not seen earlier, and omits 136 previously
-observed products. Of 620 comparable products, 13 prices increased and 6
-decreased; 3 displayed discounts increased and 13 decreased among 592
-comparable discount pairs. Exactly 491 products appear on every accepted date.
-These are preliminary sample checks, not final seven-day conclusions. All
-eight current unit tests pass.
+Daily Run 6 was completed on 18 October 2026 from 21:39:00 to 21:41:04 in
+`Africa/Nairobi`:
 
-The accepted Days 1-5 evidence is published together in Git after this approved
-synchronization. Future generated datasets, manifests, checkpoints, logs and
-databases remain ignored by default and require a separate reviewed evidence
-publication. Raw files must never be manually edited; verify their SHA-256
-values against their manifests.
+- 600 valid unique products, with 200 from each category
+- 16 HTTP attempts, all successful on the first attempt, so 0 retries
+- 0 duplicate product IDs and 0 malformed cards
+- no scraper errors, CAPTCHA, HTTP 403, HTTP 429 or access-denial signal
+- locally verified SHA-256:
+  `f26eb2081b484b260eb1a8b346f7db36405dd45e177ce452c1afe256d3275c75`
+
+Six genuine dates from 13-18 October are now loaded locally. The database
+contains 787 unique products and 3,713 observations. Day 6 shares 584 products
+with Days 1-5, adds 16 products not seen earlier, and omits 187 previously
+observed products. Of the comparable products, 7 prices increased and 3
+decreased; 3 displayed discounts increased and 7 decreased among 557
+comparable discount pairs. Exactly 479 products appear on all six dates. These
+are preliminary sample checks, not final seven-day conclusions. All eight
+current unit tests pass.
+
+The accepted Days 1-5 evidence is published on `main`. Day 6 is complete and
+locally validated on the `day-6` branch, but still requires the workflow's
+independent checker before a pull request or publication. Generated datasets,
+manifests, checkpoints, logs and databases remain ignored by default and must
+be force-staged only by exact reviewed path. Raw files must never be manually
+edited; verify their SHA-256 values against their manifests.
 
 ## Important files
 

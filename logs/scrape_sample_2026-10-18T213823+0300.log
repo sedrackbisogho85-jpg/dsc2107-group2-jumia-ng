@@ -1,0 +1,8 @@
+2026-10-18 21:38:23,850 INFO Request 1/1000 attempt=1 url=https://www.jumia.com.ng/robots.txt
+2026-10-18 21:38:28,078 INFO Request 2/1000 attempt=1 url=https://www.jumia.com.ng/phones-tablets/
+2026-10-18 21:38:35,290 INFO Parsed category=Phones & Tablets page=1 cards=40 unique_total=40
+2026-10-18 21:38:35,291 INFO Request 3/1000 attempt=1 url=https://www.jumia.com.ng/computing/
+2026-10-18 21:38:39,593 INFO Parsed category=Computing page=1 cards=40 unique_total=80
+2026-10-18 21:38:42,160 INFO Request 4/1000 attempt=1 url=https://www.jumia.com.ng/electronics/
+2026-10-18 21:38:48,084 INFO Parsed category=Electronics page=1 cards=40 unique_total=120
+2026-10-18 21:38:48,166 INFO Run result: {"completion_status": "complete", "record_count": 120, "category_counts": {"Phones & Tablets": 40, "Computing": 40, "Electronics": 40}, "duplicate_cards_merged": 0, "malformed_cards": 0, "request_count": 4, "delay_seconds": 3.0, "errors": [], "raw_file": "C:\\Users\\ALEX\\Desktop\\YEAR 2 SEM 1\\MINERS\\MAIN-JUMIA\\DSC2107_Group2_Jumia_Main\\data\\raw\\jumia_ng_sample_2026-10-18T213823+0300.csv", "manifest": "C:\\Users\\ALEX\\Desktop\\YEAR 2 SEM 1\\MINERS\\MAIN-JUMIA\\DSC2107_Group2_Jumia_Main\\data\\raw\\manifest_sample_2026-10-18T213823+0300.json", "checkpoint": "C:\\Users\\ALEX\\Desktop\\YEAR 2 SEM 1\\MINERS\\MAIN-JUMIA\\DSC2107_Group2_Jumia_Main\\data\\checkpoints\\sample_2026-10-18T213823+0300.json", "log": "C:\\Users\\ALEX\\Desktop\\YEAR 2 SEM 1\\MINERS\\MAIN-JUMIA\\DSC2107_Group2_Jumia_Main\\logs\\scrape_sample_2026-10-18T213823+0300.log"}

@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "file": "data\\raw\\jumia_ng_sample_2026-10-18T213823+0300.csv",
+  "record_count": 120,
+  "minimum_required": 100,
+  "missing_columns": [],
+  "missing_values": {
+    "source_product_id": 0,
+    "product_name": 0,
+    "brand": 0,
+    "current_price_raw": 0,
+    "old_price_raw": 2,
+    "displayed_discount_raw": 2,
+    "rating_raw": 0,
+    "review_count_raw": 0,
+    "category": 0,
+    "product_url": 0,
+    "currency": 0,
+    "source_site": 0,
+    "scraped_at": 0,
+    "scrape_date": 0
+  },
+  "duplicate_count": 0,
+  "category_counts": {
+    "Phones & Tablets": 40,
+    "Computing": 40,
+    "Electronics": 40
+  },
+  "timestamp_error_count": 0,
+  "timestamp_errors": []
+}

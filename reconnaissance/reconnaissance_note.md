@@ -78,6 +78,19 @@ Evidence is stored in `reconnaissance/evidence/`:
 - `reconnaissance_http_20261013T184214+0300.json`, including successful
   Computing and Electronics responses, timestamps, sizes, and SHA-256 hashes
 
-Full HTML captures are kept locally and excluded from Git because they are
-large, change frequently, and are evidence rather than source code.
+Full HTML captures are retained as working evidence because they preserve the
+page structure used by the parser. They should be excluded from the lean final
+submission because they are large, change frequently, and are not source code.
+
+## Day 6 live-policy recheck
+
+The access and selector checks were repeated before Daily Run 6 on 18 October
+2026. `robots.txt` returned HTTP 200 at `21:36:49+03:00` with SHA-256
+`375a7c8fa4ea1d2c343ea66b16672bb37b8935b42ff82e20a7d612588d77469e`.
+The first Phones & Tablets, Computing and Electronics pages also returned HTTP
+200 and each contained 40 main catalogue cards, a next-page link and no CAPTCHA
+or access-denial signal. The exact recheck is recorded in
+`reconnaissance_http_20261018T213742+0300.json` and its accompanying robots and
+HTML captures. The subsequent live test and sample therefore continued with
+the approved sequential three-second delay.
 

@@ -1,11 +1,12 @@
 # Project scope audit
 
-**Audit date:** 16 October 2026
-**Scope:** Independent Jumia Nigeria repository after accepted Daily Runs 1–3
+**Audit date:** 18 October 2026
+**Scope:** Independent Jumia Nigeria repository after validated Daily Runs 1–6
 
 This audit classifies the current project without deleting or moving files. The
-final submission is not yet complete because four daily runs, the notebook PDF,
-final report, presentation and contribution statements are still pending.
+final submission is not yet complete because Daily Run 7, the independent Day
+6 check, notebook PDF, final report, presentation and contribution statements
+are still pending.
 
 ## A. Required final deliverables
 
@@ -19,10 +20,10 @@ final report, presentation and contribution statements are still pending.
 | `src/database_loader.py` | Required normalized SQLite loader. It now accepts multiple cleaned daily files. |
 | `src/config.py`, `src/utils.py`, `src/__init__.py` | Essential supporting files used by the main scripts. |
 | `src/validator.py` | Required validation step for accepted raw files. |
-| `data/raw/jumia_ng_products_2026-10-13.csv`, `2026-10-14.csv` and `2026-10-15.csv` | The first three immutable daily raw files. Four genuine daily files are still required. |
-| Corresponding files under `data/cleaned/` | Current reproducible cleaned inputs for Runs 1–3. A combined cleaned CSV should be produced after Run 7 for the final package. |
-| `database/jumia_ng.sqlite` | Current normalized three-day database with 727 products, 3 categories and 1,878 observations. It must be refreshed after every accepted run. |
-| `notebooks/jumia_analysis.ipynb` | Executed preliminary notebook. It currently uses three dates and contains interpreted charts. |
+| `data/raw/jumia_ng_products_2026-10-13.csv` through `2026-10-18.csv` | The first six immutable daily raw files. Runs 1–5 are independently accepted; Run 6 is locally validated and awaiting its checker. One genuine daily file is still required. |
+| Corresponding files under `data/cleaned/` | Current reproducible cleaned inputs for Runs 1–6. A combined cleaned CSV should be produced after Run 7 for the final package. |
+| `database/jumia_ng.sqlite` | Current normalized six-day database with 787 products, 3 categories and 3,713 observations. It must be refreshed after every validated run. |
+| `notebooks/jumia_analysis.ipynb` | Executed preliminary notebook. It currently uses six genuine dates, contains interpreted charts and has no saved execution errors. |
 | `report/data_dictionary.md` | Required explanation of fields, types, sources and meanings. It can be included directly or incorporated into the final report. |
 | `report/final_report.pdf` | Required final 5–8-page report; not yet created. |
 | `notebooks/jumia_analysis.pdf` | Required final notebook export; not yet created. |
@@ -59,8 +60,7 @@ final report, presentation and contribution statements are still pending.
 | `.env`, virtual environments and credentials if created later | Private runtime configuration must never be submitted. None is currently tracked. |
 | `src/__pycache__/`, `tests/__pycache__/`, `tmp/__pycache__/` and `*.pyc` | Generated Python cache files. |
 | `.pytest_cache/` and `.ipynb_checkpoints/` if present later | Generated tool caches, not assignment evidence. |
-| `tmp/` | Local notebook builders, validation helpers, PDF render images, two Edge browser profiles and cache files. It currently contains about 14 MB across roughly 485 files. |
-| `database/jumia_ng_day2_build.sqlite` | Temporary validated build database. Its SHA-256 matches `database/jumia_ng.sqlite`, so it is a duplicate working copy. |
+| `tmp/` | Reusable local notebook/PDF helper scripts. They are development tools rather than final submission content. |
 | `database/.gitkeep`, `logs/.gitkeep`, `notebooks/.gitkeep`, `presentation/.gitkeep`, `contributions/.gitkeep` and the data `.gitkeep` files | Repository folder placeholders. They have no value in the final packaged submission once real files exist. |
 | External `BACKUPS/JUMIA_DAY1_2026-10-13` and `BACKUPS/JUMIA_DAY2_2026-10-14` folders | Recovery copies must remain outside the final submission to avoid duplicate datasets and databases. |
 | Temporary PDF render PNG files and browser profiles | Visual-quality checking artifacts only. The accepted PDF is the deliverable. |
@@ -69,9 +69,9 @@ No file in this section was deleted during the audit.
 
 ## D. Possible duplication or excessive complexity
 
-1. `database/jumia_ng_day2_build.sqlite` and `database/jumia_ng.sqlite` are exact duplicates after validation. The build copy is temporary and should be excluded when final packaging begins.
+1. No temporary database build remains after the validated Day 6 database was installed.
 2. `validation_daily_2026-10-14.json` and `validation_daily_2026-10-14_detailed.json` overlap. The detailed file contains the full requested checks; a human should decide whether the smaller file still adds value.
-3. The two reconnaissance HTTP JSON files and the two Computing HTML captures are not simple duplicates: one set records the HTTP 503 and the later set records recovery. They should remain working evidence but do not belong in the lean final package.
+3. The reconnaissance evidence sets are not simple duplicates: the first set records the original HTTP 503 and recovery, while the 18 October set records the Day 6 live-policy recheck. They should remain working evidence but do not belong in the lean final package.
 4. `.gitkeep` files remain in several folders that now contain real files. They are harmless repository scaffolding but unnecessary in the final submission archive.
 5. `src/live_test.py`, `src/reconnaissance.py` and `src/scraper.py` share some request and block-checking ideas. Their roles are different and support the required testing sequence, so they should not be merged or removed merely to shorten the project.
 6. Static inspection found no unused top-level functions. It found two low-risk unused imports: `Callable` in `src/cleaner.py` and `Path` in `src/reconnaissance.py`. These can be removed later in a focused cleanup, but they do not affect correctness.
@@ -85,7 +85,7 @@ No file in this section was deleted during the audit.
 - Decide whether the final archive should include daily manifests and checksum reports. They are strong evidence but are not listed in the lean target structure.
 - Replace all six member placeholders only with confirmed names, student numbers and truthful contribution records.
 - Confirm the exact warm-up filenames in the separate warm-up repository before packaging. Do not merge the warm-up and Jumia Git histories.
-- Review the final report, notebook PDF and presentation after Runs 3–7 because they do not yet exist.
+- Review the final report, notebook PDF and presentation after Run 7 because they do not yet exist.
 
 ## Student-scope and writing review
 
@@ -94,4 +94,4 @@ No file in this section was deleted during the audit.
 - No wording claims guaranteed marks, perfection, expert status, enterprise/production-grade architecture or lecturer approval.
 - No project document says that AI generated the assignment. The only AI-bot names found are quoted from the saved public `robots.txt` evidence.
 - Reliability features should remain. Pagination, missing-value handling, retries, logging, rate limiting, request counting, block detection, validation, database constraints and tests directly support the rubric.
-- Current notebook wording is cautious: it labels the three-day results preliminary and does not make seven-day conclusions.
+- Current notebook wording is cautious: it labels the six-day results preliminary, records the pending Day 6 checker and does not make seven-day conclusions.

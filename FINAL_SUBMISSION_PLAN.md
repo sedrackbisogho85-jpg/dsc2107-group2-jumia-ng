@@ -1,8 +1,8 @@
 # Final submission plan
 
 This is a packaging plan only. Do not create the final submission folder until
-Daily Runs 4–7, the final analysis, the report, the presentation and the signed
-contribution statements are complete and verified.
+Daily Run 7, the independent Day 6 check, final analysis, report, presentation
+and signed contribution statements are complete and verified.
 
 The Books to Scrape warm-up and Jumia Nigeria must remain separate Git
 repositories. At packaging time, copy only the requested warm-up deliverables
@@ -30,7 +30,7 @@ DSC2107_Group2_Final_Submission/
 │   ├── raw/
 │   │   ├── jumia_ng_products_2026-10-13.csv
 │   │   ├── jumia_ng_products_2026-10-14.csv
-│   │   └── five later genuine daily CSV files
+│   │   └── five genuine daily CSV files for 15-19 October
 │   └── cleaned/
 │       └── jumia_ng_products_2026-10-13_to_2026-10-19_cleaned.csv
 ├── database/
@@ -54,10 +54,10 @@ DSC2107_Group2_Final_Submission/
 | `warmup/books_scraper.py` and `warmup/books.csv` | Selected files from the separate warm-up repository | Human review required; do not copy yet. |
 | Reconnaissance PDF | `reconnaissance/reconnaissance_note.pdf` | Complete and verified as one page. |
 | Main source code | Essential files under `src/` | Working; multi-day database loader is tested. |
-| Seven raw CSVs | Accepted immutable files under `data/raw/` | Runs 1–3 exist; Runs 4–7 are pending. |
-| Combined cleaned CSV | Rebuild from all seven accepted raw CSVs | Not created because only three dates exist. |
-| Final SQLite database | `database/jumia_ng.sqlite` rebuilt from all accepted cleaned data | Current database contains Runs 1–3: 727 products and 1,878 observations. |
-| Executed notebook | `notebooks/jumia_analysis.ipynb` | Three-day version complete; final refresh is pending. |
+| Seven raw CSVs | Accepted immutable files under `data/raw/` | Runs 1–5 are accepted; Run 6 is locally validated and awaits its checker; Run 7 is pending. |
+| Combined cleaned CSV | Rebuild from all seven accepted raw CSVs | Not created because the final date is still pending. |
+| Final SQLite database | `database/jumia_ng.sqlite` rebuilt from all validated cleaned data | Current local database contains Runs 1–6: 787 products and 3,713 observations. |
+| Executed notebook | `notebooks/jumia_analysis.ipynb` | Six-day version executes cleanly; the final refresh after Run 7 is pending. |
 | Notebook PDF | Export from the final executed notebook | Not created. |
 | Final report | Final 5–8-page report based on verified seven-day results | Not created. |
 | Presentation | Final ten-minute presentation | Not created. |
@@ -81,7 +81,7 @@ for evidence or if the final README explicitly references them.
 
 ## Work remaining before packaging
 
-1. Complete one genuine accepted run on each remaining date, 15–19 October.
+1. Have a different group member independently verify Day 6, then complete the genuine Day 7 run on 19 October.
 2. Verify every raw checksum and preserve each accepted raw CSV unchanged.
 3. Clean all seven raw files through the existing cleaner.
 4. Produce one combined cleaned CSV without losing the daily timestamps or

@@ -1,0 +1,107 @@
+[
+  {
+    "label": "robots",
+    "requested_url": "https://www.jumia.com.ng/robots.txt",
+    "final_url": "https://www.jumia.com.ng/robots.txt",
+    "status_code": 200,
+    "retrieved_at": "2026-10-18T21:36:49.910578+03:00",
+    "content_type": "text/plain",
+    "response_bytes": 6407,
+    "sha256": "375a7c8fa4ea1d2c343ea66b16672bb37b8935b42ff82e20a7d612588d77469e",
+    "title": null,
+    "product_card_counts": {},
+    "next_links": [],
+    "blocked_signal": null,
+    "saved_html": "reconnaissance\\evidence\\robots_20261018T213649+0300.txt"
+  },
+  {
+    "label": "Phones & Tablets",
+    "requested_url": "https://www.jumia.com.ng/phones-tablets/",
+    "final_url": "https://www.jumia.com.ng/phones-tablets/",
+    "status_code": 200,
+    "retrieved_at": "2026-10-18T21:36:54.923268+03:00",
+    "content_type": "text/html; charset=utf-8",
+    "response_bytes": 979860,
+    "sha256": "8004481fe9ac40863c803471b373b8364610dbc17a2b9d5ba8d4877b9f1ce129",
+    "title": "Phones & Tablets Prices in Nigeria (188506 Products) | Jumia",
+    "product_card_counts": {
+      "article.prd": 180,
+      "article.prd._fb.col.c-prd": 40,
+      "article[data-sku]": 0,
+      "article[data-id]": 0,
+      "a.core": 180,
+      "a.core[data-gtm-id]": 180,
+      "h3.name": 40,
+      "div.prc": 180,
+      "div.old": 40,
+      "div.bdg._dsct": 176,
+      "div.stars": 44,
+      "a[aria-label='Next Page']": 1
+    },
+    "next_links": [
+      "https://www.jumia.com.ng/phones-tablets/?page=2#catalog-listing"
+    ],
+    "blocked_signal": null,
+    "saved_html": "reconnaissance\\evidence\\phones_and_tablets_20261018T213654+0300.html"
+  },
+  {
+    "label": "Computing",
+    "requested_url": "https://www.jumia.com.ng/computing/",
+    "final_url": "https://www.jumia.com.ng/computing/",
+    "status_code": 200,
+    "retrieved_at": "2026-10-18T21:37:04.557727+03:00",
+    "content_type": "text/html; charset=utf-8",
+    "response_bytes": 852542,
+    "sha256": "7e85196df58e9e22f9f3039203d626a0db6a7eec000d56ec125f70fad750601a",
+    "title": "Computing - Buy Computers & Accessories Online | Jumia NG",
+    "product_card_counts": {
+      "article.prd": 120,
+      "article.prd._fb.col.c-prd": 40,
+      "article[data-sku]": 0,
+      "article[data-id]": 0,
+      "a.core": 120,
+      "a.core[data-gtm-id]": 120,
+      "h3.name": 40,
+      "div.prc": 120,
+      "div.old": 40,
+      "div.bdg._dsct": 93,
+      "div.stars": 44,
+      "a[aria-label='Next Page']": 1
+    },
+    "next_links": [
+      "https://www.jumia.com.ng/computing/?page=2#catalog-listing"
+    ],
+    "blocked_signal": null,
+    "saved_html": "reconnaissance\\evidence\\computing_20261018T213704+0300.html"
+  },
+  {
+    "label": "Electronics",
+    "requested_url": "https://www.jumia.com.ng/electronics/",
+    "final_url": "https://www.jumia.com.ng/electronics/",
+    "status_code": 200,
+    "retrieved_at": "2026-10-18T21:37:28.570910+03:00",
+    "content_type": "text/html; charset=utf-8",
+    "response_bytes": 838117,
+    "sha256": "cfc6b91b9d546934cb51377971702fb3ffed0e262093926e6830429ef8c8ff18",
+    "title": "Buy Quality Electronics at Affordable Prices Online | Jumia Nigeria",
+    "product_card_counts": {
+      "article.prd": 112,
+      "article.prd._fb.col.c-prd": 40,
+      "article[data-sku]": 0,
+      "article[data-id]": 0,
+      "a.core": 112,
+      "a.core[data-gtm-id]": 112,
+      "h3.name": 40,
+      "div.prc": 112,
+      "div.old": 38,
+      "div.bdg._dsct": 110,
+      "div.stars": 44,
+      "a[aria-label='Next Page']": 1
+    },
+    "next_links": [
+      "https://www.jumia.com.ng/electronics/?page=2#catalog-listing"
+    ],
+    "blocked_signal": null,
+    "saved_html": "reconnaissance\\evidence\\electronics_20261018T213728+0300.html"
+  }
+]
