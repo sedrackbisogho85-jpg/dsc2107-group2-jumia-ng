@@ -12,9 +12,15 @@ env/
 .env.*
 !.env.example
 
-# Accepted datasets, manifests, checkpoints, logs, databases, evidence captures,
-# notebook exports, reports and presentations are project artifacts and are
-# intentionally tracked so a fresh clone contains the complete project.
+# Generated collection data and databases stay local unless the group approves
+# a separate evidence-publication task. These rules protect new run artifacts;
+# files from earlier runs that are already tracked remain tracked by Git.
+data/raw/*.csv
+data/raw/*.json
+data/cleaned/*.csv
+data/checkpoints/*.json
+logs/*.log
+database/*.sqlite
 
 # Operating-system and editor files
 .DS_Store
@@ -30,7 +36,5 @@ tmp/*
 tmp/pdfs/*
 !tmp/pdfs/build_reconnaissance_pdf.py
 
-
-BACKUPS/
-
+# Local recovery copies
 BACKUPS/

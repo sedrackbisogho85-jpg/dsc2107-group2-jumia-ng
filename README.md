@@ -37,11 +37,11 @@ python -m src.validator data/raw/jumia_ng_products_YYYY-MM-DD.csv --minimum-reco
 python -m src.cleaner data/raw/jumia_ng_products_YYYY-MM-DD.csv
 ```
 
-Rebuild the database from every accepted cleaned daily file. For the current
-three-day dataset, use:
+Rebuild the database from every accepted cleaned daily file. The current
+database uses all five genuine accepted dates from 13-17 October:
 
 ```powershell
-python -m src.database_loader data/cleaned/jumia_ng_products_2026-10-13_cleaned.csv data/cleaned/jumia_ng_products_2026-10-14_cleaned.csv data/cleaned/jumia_ng_products_2026-10-15_cleaned.csv database/jumia_ng.sqlite --replace
+python -m src.database_loader data/cleaned/jumia_ng_products_2026-10-13_cleaned.csv data/cleaned/jumia_ng_products_2026-10-14_cleaned.csv data/cleaned/jumia_ng_products_2026-10-15_cleaned.csv data/cleaned/jumia_ng_products_2026-10-16_cleaned.csv data/cleaned/jumia_ng_products_2026-10-17_cleaned.csv database/jumia_ng.sqlite --replace
 ```
 
 The loader rejects duplicate observations for the same product and collection
@@ -91,25 +91,41 @@ Daily Run 3 was completed on 15 October 2026 from 21:26:16 to 21:29:55 in
 - accepted SHA-256:
   `2e7102f2bd4dbf9d33e8b677640f1dbbc0a844029df88c321768efb68c91cfe5`
 
-Daily Run 4 was completed on 16 October 2026 from 21:26:31 to 21:28:32 in Africa/Nairobi:
+Daily Run 4 was completed on 16 October 2026 from 21:26:31 to 21:28:32 in
+`Africa/Nairobi`:
 
 - 600 valid unique products, with 200 from each category
-- 16 HTTP requests, with no errors recorded
-- 0 duplicate cards merged and 0 malformed cards
-- no CAPTCHA, HTTP 403, HTTP 429 or access-denial signal
-- accepted SHA-256: ac3a696a396560e9c123cb710e600ffffa8ca365ea83486074316d8cf59aafacd
+- 16 HTTP attempts, all successful on the first attempt, so 0 retries
+- 0 duplicate saved product IDs and 0 malformed cards
+- no scraper errors, CAPTCHA, HTTP 403, HTTP 429 or access-denial signal
+- accepted SHA-256:
+  `ac3a696a396560e9c123cb710e600fffa8ca365ea83486074316d8cf59aafacd`
 
-The project has completed 4 of 7 planned daily runs. The four-day database
-contains 756 unique products and 2,478 observations. Day 3 shares 601 products
-with previous days, adds 38 products not seen earlier, and omits 88 products
-seen in an earlier sample. Day 4 adds 29 products not seen in the earlier three
-daily runs. These are preliminary sample checks, not final seven-day
-conclusions. All eight current unit tests pass.
+Daily Run 5 was completed on 17 October 2026 from 22:39:32 to 22:41:38 in
+`Africa/Nairobi`, before midnight:
 
-Accepted raw datasets, generated cleaned files, checkpoints, logs, manifests,
-and the SQLite database are committed so a fresh clone contains the complete
-project evidence. Raw files must not be manually edited; verify their SHA-256
-values against the manifests after cloning or merging.
+- 635 valid unique products: 238 Phones & Tablets, 198 Computing and 199 Electronics
+- 17 HTTP attempts, all successful on the first attempt, so 0 retries
+- 0 duplicate saved product IDs and 0 malformed cards
+- no scraper errors, CAPTCHA, HTTP 403, HTTP 429 or access-denial signal
+- accepted SHA-256:
+  `182834f7179f00460c485546a62571536c2a324087de830b4082bbba0c881268`
+
+Five of seven planned dates are now accepted: 13-17 October. The database
+contains 771 unique products and 3,113 observations. Day 5 shares 620 products
+with Days 1-4, adds 15 products not seen earlier, and omits 136 previously
+observed products. Of 620 comparable products, 13 prices increased and 6
+decreased; 3 displayed discounts increased and 13 decreased among 592
+comparable discount pairs. Exactly 491 products appear on every accepted date.
+These are preliminary sample checks, not final seven-day conclusions. All
+eight current unit tests pass.
+
+The accepted Days 1-5 evidence is published together in Git after this approved
+synchronization. Future generated datasets, manifests, checkpoints, logs and
+databases remain ignored by default and require a separate reviewed evidence
+publication. Raw files must never be manually edited; verify their SHA-256
+values against their manifests.
+
 ## Important files
 
 - `reconnaissance/reconnaissance_note.md` explains the live site findings.

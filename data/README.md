@@ -1,8 +1,10 @@
-# Version-controlled data procedure
+# Generated data procedure
 
-Accepted contents of `raw/`, `cleaned/` and `checkpoints/` are tracked by Git so
-every clone contains the complete evidence for all accepted collection dates.
-The `.gitkeep` files preserve the folder structure before the first run.
+Accepted evidence may be explicitly published after group approval, but new
+contents of `raw/`, `cleaned/`, `checkpoints/`, `logs/` and the SQLite database
+are protected by `.gitignore` by default. Keep new run artifacts local and in
+the approved external backup until a reviewed synchronization task approves
+their exact paths. The `.gitkeep` files preserve empty folder structure.
 
 ## Raw data
 
@@ -22,24 +24,29 @@ must never replace raw files. Checkpoints belong in `data/checkpoints/`, not in
 
 ## Sharing with the group
 
-Commit each accepted raw CSV together with its manifest, validation,
-checkpoint, run log, cleaned CSV and refreshed database on the daily branch.
-The reviewing member must recompute the raw checksum before merging. Never
-commit credentials, `.env` files, Git metadata, virtual environments, generated
-caches or private browser/session data.
+Give the checker the accepted raw CSV, manifest, validation, checkpoint, run
+log, cleaned CSV and refreshed database through an approved secure backup. The
+reviewing member must recompute the raw checksum before accepting the run.
+During an approved evidence-publication task, stage only the verified artifact
+paths explicitly; never use a broad add command. Never commit credentials,
+`.env` files, Git metadata, virtual environments, generated caches or private
+browser/session data.
 
 ## Current verified data
 
-Three of seven planned daily runs are now accepted:
+Five of seven planned collection dates are now accepted:
 
 | Run | Nairobi collection time | Rows | Category counts | HTTP attempts / retries | Raw SHA-256 |
 |---|---|---:|---|---:|---|
 | 1 | 13 October 2026, 19:22:00-19:26:44 | 639 | Phones & Tablets 239; Computing 200; Electronics 200 | 19 / 2 | `6d33a6b278c7ebc371d233624f94d46dd2222cdc0b71cd2537dc62a48bd52b48` |
 | 2 | 14 October 2026, 21:41:34-21:50:28 | 600 | 200 in each category | 22 / 6 | `d0d48535403804ebce0bb63fad837c0c70a52954f47753c2c00c60bd17f2d091` |
 | 3 | 15 October 2026, 21:26:16-21:29:55 | 639 | Phones & Tablets 239; Computing 200; Electronics 200 | 18 / 1 | `2e7102f2bd4dbf9d33e8b677640f1dbbc0a844029df88c321768efb68c91cfe5` |
-| 4 | 16 October 2026, 21:26:31-21:28:32 | 600 | 200 in each category | 16 / 0 | `ac3a696a396560e9c123cb710e600ffffa8ca365ea83486074316d8cf59aafacd` |
+| 4 | 16 October 2026, 21:26:31-21:28:32 | 600 | 200 in each category | 16 / 0 | `ac3a696a396560e9c123cb710e600fffa8ca365ea83486074316d8cf59aafacd` |
+| 5 | 17 October 2026, 22:39:32-22:41:38 | 635 | Phones & Tablets 238; Computing 198; Electronics 199 | 17 / 0 | `182834f7179f00460c485546a62571536c2a324087de830b4082bbba0c881268` |
 
-The refreshed database contains 1,878 observations and 727 unique products.
-Daily Run 3 passed validation with no duplicate IDs, malformed cards, final
-errors or access-denial signals. Missing values remain missing rather than
-being changed to zero.
+The refreshed database contains 3,113 observations and 771 unique products
+across 13-17 October. All five daily raw files pass validation with no duplicate
+IDs or invalid timestamps. Daily Runs 4 and 5 have no malformed cards, retries,
+final errors or access-denial signals. Day 5's 30 missing old-price/discount
+values and 5 missing rating/review values remain missing rather than being
+changed to zero.

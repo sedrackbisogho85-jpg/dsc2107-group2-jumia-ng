@@ -10,17 +10,20 @@ accept the responsibility.
 | 13 October | `[member]` | `[member]` | Completed |
 | 14 October | `[member]` | `[member]` | Completed |
 | 15 October | `[member]` | `[member]` | Completed |
-| 16 October | `[member]` | `[member]` | Not run |
-| 17 October | `[member]` | `[member]` | Not run |
+| 16 October | `[member]` | `[member]` | Completed |
+| 17 October | `M2W-E` | `[member]` | Completed |
 | 18 October | `[member]` | `[member]` | Not run |
 | 19 October | `[member]` | `[member]` | Not run |
 
-Current progress is 3 of 7 accepted runs. Daily Run 3 occurred from 21:26:16
-to 21:29:55 on 15 October 2026 in `Africa/Nairobi`. It produced 639 records
-(239 Phones & Tablets, 200 Computing and 200 Electronics) using 18 HTTP
-attempts and 1 controlled retry. Its accepted raw SHA-256 is
-`2e7102f2bd4dbf9d33e8b677640f1dbbc0a844029df88c321768efb68c91cfe5`.
-The refreshed database contains 1,878 observations and 727 products.
+Current progress is 5 of 7 accepted dates. Daily Run 4 produced 600 records
+(200 per category) on 16 October using 16 HTTP attempts and 0 retries. Daily
+Run 5 occurred from 22:39:32 to 22:41:38 on 17 October 2026 in
+`Africa/Nairobi`, before midnight. It produced 635 records (238 Phones &
+Tablets, 198 Computing and 199 Electronics) using 17 HTTP attempts and 0
+retries. Its accepted raw SHA-256 is
+`182834f7179f00460c485546a62571536c2a324087de830b4082bbba0c881268`.
+The refreshed database contains 3,113 observations and 771 products across all
+five dates from 13-17 October.
 
 There must be exactly one accepted scraper run per collection date. A rerun
 must use a timestamped filename and the group must document which file is the
@@ -47,13 +50,14 @@ accepted observation.
 5. Confirm missing values remain missing.
 6. Mark the run accepted only after all checks pass.
 
-## Version-controlled data procedure
+## Data and Git procedure
 
-After a run is accepted, commit its raw CSV, cleaned CSV, manifest, validation,
-checkpoint, log and refreshed database together on the daily branch. A second
-member must recompute the raw SHA-256 and compare it with the manifest before
-the branch is merged. A fresh clone of `main` must therefore contain every
-accepted run and the evidence needed to verify it.
+After a run is accepted, keep its raw CSV, cleaned CSV, manifest, validation,
+checkpoint, log and refreshed database together in the approved recovery
+backup. A second member must recompute the raw SHA-256 and compare it with the
+manifest before accepting the run. Generated run artifacts are ignored during
+ordinary work. An approved evidence-publication task may force-stage only the
+verified exact paths after the database and notebook are rebuilt consistently.
 
 Never commit `.env`, credentials, browser sessions, Git metadata, virtual
 environments, generated caches or external backup folders.
