@@ -70,6 +70,13 @@ class DatabaseLoaderTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "Duplicate product/date observation"):
                 build_database([first, duplicate], database)
 
+    def test_empty_input_list_is_rejected(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            database = Path(temporary_directory) / "jumia.sqlite"
+
+            with self.assertRaisesRegex(ValueError, "At least one cleaned CSV file"):
+                build_database([], database)
+
 
 if __name__ == "__main__":
     unittest.main()

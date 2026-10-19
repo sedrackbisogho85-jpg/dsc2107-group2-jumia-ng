@@ -1,3 +1,4 @@
+
 # DSC2107 Group 2 Jumia Nigeria Project
 
 This is the independent main assignment repository for Uganda Christian
@@ -147,5 +148,7 @@ edited; verify their SHA-256 values against their manifests.
 - `src/database_loader.py` rebuilds the normalized SQLite database.
 - `report/data_dictionary.md` defines the dataset columns.
 - `report/day1_quality_report.md` records the observed Day 1 evidence.
+
+## Git Practice
 
 
