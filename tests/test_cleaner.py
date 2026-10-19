@@ -1,4 +1,3 @@
-
 import unittest
 
 from src.cleaner import clean_row, parse_percentage, parse_price, parse_rating, parse_review_count
@@ -12,6 +11,11 @@ class CleanerTests(unittest.TestCase):
         self.assertEqual(parse_review_count("(1,234)"), 1234)
         self.assertIsNone(parse_price(None))
         self.assertIsNone(parse_rating(None))
+
+    def test_numeric_parsers_return_none_for_unparseable_values(self):
+        for parser in (parse_price, parse_percentage, parse_rating, parse_review_count):
+            with self.subTest(parser=parser.__name__):
+                self.assertIsNone(parser("not available"))
 
     def test_discount_calculation_and_tolerance_flag(self):
         row = {
@@ -40,4 +44,5 @@ class CleanerTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
 
