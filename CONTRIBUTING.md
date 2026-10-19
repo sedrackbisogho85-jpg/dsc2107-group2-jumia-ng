@@ -9,7 +9,7 @@ reviewable and honestly attributed.
 2. Member 2: `[name and student number]`
 3. Member 3: `[name and student number]`
 4. Member 4: `[name and student number]`
-5. Member 5: `[name and student number]`
+5. Member 5: `Lwanga Darren Jordan S25B38/022`
 6. Member 6: `[name and student number]`
 
 Replace the placeholders only with confirmed group details.
@@ -19,8 +19,8 @@ Replace the placeholders only with confirmed group details.
 Each member must use an independent clone and configure their own Git identity:
 
 ```powershell
-git config user.name "Your Name"
-git config user.email "your-own-address@example.com"
+git config user.name "lwangadarren4-cyber"
+git config user.email "lwangadarren4@gmail.com"
 ```
 
 Do not share one working folder or pretend that another member's commit is your
