@@ -34,8 +34,8 @@ browser/session data.
 
 ## Current verified data
 
-Days 1-5 are independently accepted. Day 6 is complete and locally validated,
-but its independent checker is still pending:
+Days 1-5 are independently accepted. Runs 6-7 are complete and locally
+validated, but their independent checkers are still pending:
 
 | Run | Nairobi collection time | Rows | Category counts | HTTP attempts / retries | Raw SHA-256 |
 |---|---|---:|---|---:|---|
@@ -45,10 +45,13 @@ but its independent checker is still pending:
 | 4 | 16 October 2026, 21:26:31-21:28:32 | 600 | 200 in each category | 16 / 0 | `ac3a696a396560e9c123cb710e600fffa8ca365ea83486074316d8cf59aafacd` |
 | 5 | 17 October 2026, 22:39:32-22:41:38 | 635 | Phones & Tablets 238; Computing 198; Electronics 199 | 17 / 0 | `182834f7179f00460c485546a62571536c2a324087de830b4082bbba0c881268` |
 | 6 | 18 October 2026, 21:39:00-21:41:04 | 600 | 200 in each category | 16 / 0 | `f26eb2081b484b260eb1a8b346f7db36405dd45e177ce452c1afe256d3275c75` |
+| 7 | 19 October 2026, 18:23:23-18:27:57, checkpoint resume at 18:25:54 | 600 | 200 in each category | 20 / 2 retries plus 1 resume | `5f3f6fdbfeb81841457cf6a33e944865c7419f4cdb9e5e5e251c7a3a6162df74` |
 
-The refreshed local database contains 3,713 observations and 787 unique
-products across 13-18 October. All six daily raw files pass automated
-validation with no duplicate IDs or invalid timestamps. Daily Runs 4-6 have no
-malformed cards, retries, final errors or access-denial signals. Day 6's 27
-missing old-price/discount values and 3 missing rating/review values remain
+The refreshed local database contains 4,313 observations and 799 unique
+products across 13-19 October. All seven completed daily raw files pass
+automated validation with no duplicate IDs or invalid timestamps. Day 7's
+initial interrupted attempt, incomplete CSV, manifest, checkpoint and log are
+preserved as recovery evidence and are not the accepted candidate. The
+completed Day 7 file has no malformed cards or final access-denial signal. Its
+26 missing old-price/discount values and 3 missing rating/review values remain
 missing rather than being changed to zero.

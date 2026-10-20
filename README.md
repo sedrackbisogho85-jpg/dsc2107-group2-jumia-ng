@@ -33,16 +33,16 @@ For a daily run after the sample passes:
 
 ```powershell
 python -m src.scraper daily --target 600 --max-pages 8
-python -m src.validator data/raw/jumia_ng_products_YYYY-MM-DD.csv --minimum-records 500
+python -m src.validator data/raw/jumia_ng_products_YYYY-MM-DD.csv --minimum-records 500 --save data/raw/validation_daily_YYYY-MM-DD.json
 python -m src.cleaner data/raw/jumia_ng_products_YYYY-MM-DD.csv
 ```
 
 Rebuild the database from every locally validated cleaned daily file. The
-current local database uses all six genuine dates from 13-18 October; Day 6
-still needs the independent checker required by the group workflow:
+current local database uses all seven genuine dates from 13-19 October; Runs
+6-7 still need the independent checkers required by the group workflow:
 
 ```powershell
-python -m src.database_loader data/cleaned/jumia_ng_products_2026-10-13_cleaned.csv data/cleaned/jumia_ng_products_2026-10-14_cleaned.csv data/cleaned/jumia_ng_products_2026-10-15_cleaned.csv data/cleaned/jumia_ng_products_2026-10-16_cleaned.csv data/cleaned/jumia_ng_products_2026-10-17_cleaned.csv data/cleaned/jumia_ng_products_2026-10-18_cleaned.csv database/jumia_ng.sqlite --replace
+python -m src.database_loader data/cleaned/jumia_ng_products_2026-10-13_cleaned.csv data/cleaned/jumia_ng_products_2026-10-14_cleaned.csv data/cleaned/jumia_ng_products_2026-10-15_cleaned.csv data/cleaned/jumia_ng_products_2026-10-16_cleaned.csv data/cleaned/jumia_ng_products_2026-10-17_cleaned.csv data/cleaned/jumia_ng_products_2026-10-18_cleaned.csv data/cleaned/jumia_ng_products_2026-10-19_cleaned.csv database/jumia_ng.sqlite --replace
 ```
 
 The loader rejects duplicate observations for the same product and collection
@@ -122,21 +122,37 @@ Daily Run 6 was completed on 18 October 2026 from 21:39:00 to 21:41:04 in
 - locally verified SHA-256:
   `f26eb2081b484b260eb1a8b346f7db36405dd45e177ce452c1afe256d3275c75`
 
-Six genuine dates from 13-18 October are now loaded locally. The database
-contains 787 unique products and 3,713 observations. Day 6 shares 584 products
-with Days 1-5, adds 16 products not seen earlier, and omits 187 previously
-observed products. Of the comparable products, 7 prices increased and 3
-decreased; 3 displayed discounts increased and 7 decreased among 557
-comparable discount pairs. Exactly 479 products appear on all six dates. These
-are preliminary sample checks, not final seven-day conclusions. All eight
-current unit tests pass.
+Daily Run 7 began on 19 October 2026 at 18:23:23 in `Africa/Nairobi`. A
+temporary timeout and DNS failure stopped the first attempt after 40 records.
+The preserved checkpoint was resumed at 18:25:54 without requesting the
+completed page again, and the run completed at 18:27:57:
 
-The accepted Days 1-5 evidence is published on `main`. Day 6 is complete and
-locally validated on the `day-6` branch, but still requires the workflow's
-independent checker before a pull request or publication. Generated datasets,
-manifests, checkpoints, logs and databases remain ignored by default and must
-be force-staged only by exact reviewed path. Raw files must never be manually
-edited; verify their SHA-256 values against their manifests.
+- 600 valid unique products, with 200 from each category
+- 20 total request attempts across the interrupted attempt and its checkpoint
+  resume; the three failed Computing attempts remain documented by the
+  incomplete manifest and log
+- 0 duplicate product IDs and 0 malformed cards in the completed raw file
+- no CAPTCHA, HTTP 403, HTTP 429 or access-denial signal
+- locally verified SHA-256:
+  `5f3f6fdbfeb81841457cf6a33e944865c7419f4cdb9e5e5e251c7a3a6162df74`
+
+Seven genuine dates from 13-19 October are now loaded locally. The database
+contains 799 unique products and 4,313 observations. Day 7 shares 588 products
+with Days 1-6, adds 12 products not seen earlier, and omits 199 previously
+observed products. Of the comparable products, 26 prices increased and 192
+decreased; 176 displayed discounts increased and 24 decreased. Exactly 469
+products appear on all seven dates. These are descriptive category-page sample
+results, not whole-market claims. All eight current unit tests pass, and the
+notebook executes 15 of 15 code cells with zero errors and eight PNG chart
+outputs covering the complete seven-day analysis.
+
+The Days 1-6 evidence is published on `main`. Day 6 is locally validated but
+still requires its independent checker. Day 7 is locally validated on the
+`day-7` branch and also requires an independent checker before acceptance or
+publication. Generated datasets, manifests, checkpoints, logs and databases
+remain ignored by default and must be force-staged only by exact reviewed path.
+Raw files must never be manually edited; verify their SHA-256 values against
+their manifests.
 
 ## Important files
 

@@ -1,0 +1,56 @@
+{
+  "run_id": "2026-10-13T191821+0300",
+  "mode": "sample",
+  "start_time": "2026-10-13T19:18:21.494481+03:00",
+  "finish_time": "2026-10-13T19:20:03.139391+03:00",
+  "record_count": 120,
+  "unique_product_count": 120,
+  "category_counts": {
+    "Phones & Tablets": 40,
+    "Computing": 40,
+    "Electronics": 40
+  },
+  "request_count": 5,
+  "actual_delay_seconds": 3.0,
+  "completion_status": "complete",
+  "target": 100,
+  "target_met": true,
+  "duplicate_cards_merged": 0,
+  "malformed_cards": 0,
+  "errors": [],
+  "pages_visited": [
+    {
+      "category": "Phones & Tablets",
+      "page": 1,
+      "url": "https://www.jumia.com.ng/phones-tablets/",
+      "status": 200,
+      "cards": 40,
+      "new_unique_products": 40,
+      "scraped_at": "2026-10-13T19:18:37.280334+03:00"
+    },
+    {
+      "category": "Computing",
+      "page": 1,
+      "url": "https://www.jumia.com.ng/computing/",
+      "status": 200,
+      "cards": 40,
+      "new_unique_products": 40,
+      "scraped_at": "2026-10-13T19:19:48.518315+03:00"
+    },
+    {
+      "category": "Electronics",
+      "page": 1,
+      "url": "https://www.jumia.com.ng/electronics/",
+      "status": 200,
+      "cards": 40,
+      "new_unique_products": 40,
+      "scraped_at": "2026-10-13T19:20:01.952136+03:00"
+    }
+  ],
+  "robots_url": "https://www.jumia.com.ng/robots.txt",
+  "robots_status": 200,
+  "robots_sha256": "375a7c8fa4ea1d2c343ea66b16672bb37b8935b42ff82e20a7d612588d77469e",
+  "raw_file": "data\\raw\\jumia_ng_sample_2026-10-13T191821+0300.csv",
+  "raw_file_sha256": "1257b34d0d9a68b7cad0c53bea2fbdfb8e435b7a905219f6c4134f4a85638019",
+  "log_file": "logs\\scrape_sample_2026-10-13T191821+0300.log"
+}
