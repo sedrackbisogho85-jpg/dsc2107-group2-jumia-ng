@@ -1,0 +1,26 @@
+@startuml
+start
+:Staff selects pending prescription;
+:InventoryRepository.dispense(prescription_id);
+:Load Prescription and lines;
+if (Status is PENDING?) then (no)
+  :Reject; no changes;
+  stop
+else (yes)
+  :Load medicines and allow-list;
+  repeat
+    if (Controlled and prescriber unauthorised?) then (yes)
+      :Reject;
+      stop
+    endif
+    if (Stock insufficient?) then (yes)
+      :Reject;
+      stop
+    endif
+  repeat while (More lines?)
+  :Reduce every stock row;
+  :Set status = DISPENSED;
+  :COMMIT;
+endif
+stop
+@enduml

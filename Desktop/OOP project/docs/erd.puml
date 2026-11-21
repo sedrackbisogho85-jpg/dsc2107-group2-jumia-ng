@@ -1,0 +1,15 @@
+@startuml
+hide methods
+entity medicines
+entity branches
+entity stock
+entity prescriptions
+entity prescription_lines
+entity allowed_prescribers
+
+medicines ||--o{ stock : medicine_code
+branches ||--o{ stock : branch_code
+branches ||--o{ prescriptions : branch_code
+prescriptions ||--o{ prescription_lines : prescription_id
+medicines ||--o{ prescription_lines : medicine_code
+@enduml
