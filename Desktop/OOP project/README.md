@@ -8,12 +8,25 @@ by SQLite, built around a pure Python domain model.
 
 ```
 pharmacy_system/
+├── medicine.py     # Member 1: Medicine public interface
+├── prescription.py # Member 1: Prescription public interface
+├── database.py     # Member 2: database/repository public interface
+├── schema.sql      # Member 2: SQLite schema and constraints
+├── init_db.py      # Member 2: database initialization
+├── repositories.py # Member 2: persistence interface
+├── inventory.py    # Member 3: branch stock interface
+├── dispensing.py   # Member 4: atomic dispensing interface
+├── app.py          # Member 5: Tkinter entry point
+├── gui/            # Member 5: medicine, stock, prescription and report views
+├── reports.py      # Member 6: low-stock reporting
+├── seed.sql        # Member 6: simple SQL seed reference
+├── seed_data.py    # Member 6: reproducible data loader
+├── tests/          # Member 1-6 responsibility test modules
 ├── domain.py       # OOP domain model: Medicine hierarchy, Branch, StockEntry,
 │                   # Prescription, AllowList. No sqlite3 or tkinter imports.
 ├── schema.sql      # CREATE TABLE statements, loaded automatically on first run
 ├── repository.py   # InventoryRepository: the only class that imports sqlite3
-├── gui.py          # Tkinter screens: Main Menu + the 8 operation screens
-├── seed_data.py    # Reproducible fictional test data loader
+├── gui.py          # Member 5: Tkinter screens: Main Menu + 8 operation screens
 ├── demo.py         # Command-line walk-through of the MVP flow (no GUI needed)
 └── README.md       # This file
 ```

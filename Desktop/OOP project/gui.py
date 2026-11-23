@@ -34,6 +34,7 @@ from repository import InventoryRepository
 # ---------------------------------------------------------------------------
 
 class PharmacyApp(tk.Tk):
+    # Member 5: Tkinter application shell. Backend business rules remain outside this GUI.
     def __init__(self, repo: InventoryRepository):
         super().__init__()
         self.repo = repo
@@ -523,8 +524,13 @@ class LowStockFrame(BaseScreen):
         self.set_status(f"{len(low)} medicine(s) at or below reorder level at {branch_code}.", ok=True)
 
 
-if __name__ == "__main__":
+def main() -> None:
+    """Member 5: launch the Tkinter application."""
     repository = InventoryRepository("pharmacy.db")
     app = PharmacyApp(repository)
     app.protocol("WM_DELETE_WINDOW", lambda: (repository.close(), app.destroy()))
     app.mainloop()
+
+
+if __name__ == "__main__":
+    main()

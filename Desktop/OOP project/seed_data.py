@@ -1,6 +1,7 @@
 """
 seed_data.py
 ------------
+Member 6 responsibility: reproducible fictional seed data.
 Loads a fixed set of fictional test data into pharmacy.db, for reproducible
 manual testing in the Tkinter GUI (or anywhere else). Every patient,
 prescriber and medicine below is fictional -- see Milestone 1, NFR5.

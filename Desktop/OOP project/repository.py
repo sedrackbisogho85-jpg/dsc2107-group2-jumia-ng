@@ -36,6 +36,8 @@ SCHEMA_PATH = Path(__file__).parent / "schema.sql"
 
 
 class InventoryRepository:
+    # Member 2 owns persistence; Member 3 owns inventory queries; Member 4 owns
+    # atomic dispensing and rollback; Member 6 owns report queries.
     """SQLite-backed persistence for the whole domain model."""
 
     def __init__(self, db_path: str = "pharmacy.db"):

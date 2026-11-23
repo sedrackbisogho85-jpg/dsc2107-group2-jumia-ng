@@ -1,4 +1,5 @@
 -- schema.sql
+-- Member 2 responsibility: SQLite tables, foreign keys and constraints.
 -- Full schema for the Campus Pharmacy Inventory, Dispensing and Reporting
 -- System. Every invariant from Milestone 1, section 7 is enforced twice:
 -- once here (CHECK constraints), and once in domain.py (property setters

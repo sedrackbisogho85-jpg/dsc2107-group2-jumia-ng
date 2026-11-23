@@ -51,6 +51,7 @@ class EmptyPrescriptionError(DomainError):
 # ---------------------------------------------------------------------------
 # Medicine hierarchy (inheritance + polymorphism)
 # ---------------------------------------------------------------------------
+# Member 1 responsibility: Medicine validation and polymorphic dispensing rules.
 
 class Medicine(ABC):
     """
@@ -170,6 +171,7 @@ class Branch:
 # ---------------------------------------------------------------------------
 # StockEntry
 # ---------------------------------------------------------------------------
+# Member 3 responsibility: branch-specific stock quantity validation.
 
 class StockEntry:
     """
